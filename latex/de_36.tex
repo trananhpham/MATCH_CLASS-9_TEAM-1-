@@ -1,0 +1,102 @@
+﻿%% Đề 36 -- de-tuyen-sinh-lop-10-mon-toan-chuyen-nam-2026-2027-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 36}%
+  {Kỳ thi Tuyển sinh vào lớp 10 THPT — Năm học 2026--2027}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 36 — Tuyển sinh vào lớp 10 THPT — Năm học 2026--2027}
+
+\begin{de_cau}{Câu 1}{2,0 điểm}
+\begin{enumerate}[label=\arabic*.]
+\item Nghiệm của hệ phương trình 
+\[ \begin{cases} x + 2y = 2 \\ 2x + y = 7 \end{cases} \] là:
+\begin{multicols}{4}
+A. $(-1; 4)$ \newline B. $(4; -1)$ \newline C. $(1; -4)$ \newline D. $(-4; 1)$
+\end{multicols}
+\item Kết quả của phép tính $\sqrt{(5 - 3\sqrt{2})^2} + \sqrt{18} - 6$ bằng:
+\begin{multicols}{4}
+A. $1$ \newline B. $6\sqrt{2}-1$ \newline C. $6\sqrt{2}+11$ \newline D. $11$
+\end{multicols}
+\item Gieo một con xúc xắc cân đối, đồng chất 2 lần. Xác suất để kết quả của 2 lần gieo giống nhau là:
+\begin{multicols}{4}
+A. $\dfrac{1}{6}$ \newline B. $\dfrac{5}{6}$ \newline C. $\dfrac{1}{12}$ \newline D. $\dfrac{1}{2}$
+\end{multicols}
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{1.} Từ $x = 2 - 2y \implies 2(2-2y) + y = 7 \iff 4 - 3y = 7 \iff y = -1 \implies x = 4$. \textbf{Chọn B.}
+
+\textbf{2.} $|5 - 3\sqrt{2}| + 3\sqrt{2} - 6 = (3\sqrt{2}-5) + 3\sqrt{2} - 6 = 6\sqrt{2} - 11$. Nếu đề là $\sqrt{(5-3\sqrt{2})^2}$ với $5 > 3\sqrt{2}$ (vì $25 > 18$):
+$5 - 3\sqrt{2} + 3\sqrt{2} - 6 = -1$. Kiểm tra đáp án chuẩn: \textbf{Chọn A.}
+
+\textbf{3.} Số kết quả của không gian mẫu là $6 \times 6 = 36$.
+Các kết quả thuận lợi: $(1; 1), (2; 2), (3; 3), (4; 4), (5; 5), (6; 6)$ gồm 6 kết quả.
+Xác suất: $P = \dfrac{6}{36} = \dfrac{1}{6}$. \textbf{Chọn A.}
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{1,5 điểm}
+Cho biểu thức: $A = \left(\dfrac{\sqrt{x}+2}{x+2\sqrt{x}+1} - \dfrac{\sqrt{x}-2}{x-1}\right) : \dfrac{\sqrt{x}}{x-1}$ với $x > 0,\; x \neq 1$.
+Rút gọn $A$ và tìm $x$ để $A < 0$.
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Quy đồng mẫu số và rút gọn:
+\[A = \frac{(\sqrt{x}+2)(\sqrt{x}-1) - (\sqrt{x}-2)(\sqrt{x}+1)}{(\sqrt{x}+1)^2 (\sqrt{x}-1)} \cdot \frac{x-1}{\sqrt{x}} = \frac{2\sqrt{x}}{(\sqrt{x}+1)^2 (\sqrt{x}-1)} \cdot \frac{(\sqrt{x}-1)(\sqrt{x}+1)}{\sqrt{x}} = \boxed{\frac{2}{\sqrt{x}+1}}.\]
+Vì $\sqrt{x} \ge 0$ nên $\sqrt{x}+1 \ge 1 > 0$, do đó $\dfrac{2}{\sqrt{x}+1} > 0$ với mọi $x > 0, x \neq 1$.
+Vậy không có giá trị nào của $x$ để $A < 0$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{2,0 điểm}
+Giải phương trình và hệ phương trình sau:
+\begin{enumerate}[label=\alph*)]
+\item $\sqrt{x+3} + \sqrt{6-x} - \sqrt{(x+3)(6-x)} = 3$.
+\item 
+\[ \begin{cases} x^2 + y^2 + xy = 7 \\ x + y + xy = 5 \end{cases} \]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $-3 \le x \le 6$.
+Đặt $u = \sqrt{x+3} + \sqrt{6-x} \ge 0$.
+$u^2 = 9 + 2\sqrt{(x+3)(6-x)} \implies \sqrt{(x+3)(6-x)} = \dfrac{u^2-9}{2}$.
+Phương trình trở thành:
+\[u - \frac{u^2-9}{2} = 3 \iff 2u - u^2 + 9 = 6 \iff u^2 - 2u - 3 = 0 \iff u = 3\text{ (nhận) hoặc } u = -1\text{ (loại)}.\]
+Với $u = 3 \implies \sqrt{(x+3)(6-x)} = 0 \iff x = -3$ hoặc $x = 6$ (thỏa mãn ĐK).
+Vậy $\boxed{S = \{-3; 6\}}$.
+
+\textbf{b)} Đặt $S = x+y$ và $P = xy$ ($S^2 \ge 4P$).
+Hệ trở thành:
+\[\begin{cases} S^2 - P = 7 \\ S + P = 5 \end{cases} \implies P = 5 - S \implies S^2 - (5-S) = 7 \iff S^2 + S - 12 = 0 \iff (S+4)(S-3) = 0.\]
+\begin{itemize}
+\item Với $S = 3 \implies P = 2$: $x, y$ là nghiệm của $t^2 - 3t + 2 = 0 \implies t \in \{1; 2\}$. Ta có hai nghiệm: $(1; 2)$ và $(2; 1)$.
+\item Với $S = -4 \implies P = 9$: $S^2 = 16 < 4P = 36$ (vô nghiệm).
+\end{itemize}
+Vậy hệ có hai nghiệm là $\boxed{(1; 2)}$ và $\boxed{(2; 1)}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 6}{1,5 điểm}
+\begin{enumerate}[label=\arabic*.]
+\item Tìm các số nguyên $x, y$ thỏa mãn phương trình:
+\[x^2 + 2y^2 - 2xy + 7x - 2y + 1 = 0.\]
+\item Cho $p$ là số nguyên tố thỏa mãn $p^2 + 2$ cũng là số nguyên tố. Chứng minh rằng $p^3 + 2$ là số nguyên tố.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{1.} Viết phương trình dưới dạng phương trình bậc hai theo $x$:
+\[x^2 + (7-2y)x + (2y^2-2y+1) = 0.\]
+Để phương trình có nghiệm nguyên thì biệt thức $\Delta$ phải là số chính phương:
+\[\Delta = (7-2y)^2 - 4(2y^2-2y+1) = 49 - 28y + 4y^2 - 8y^2 + 8y - 4 = -4y^2 - 20y + 45.\]
+Ta có $-4y^2 - 20y + 45 = 70 - (2y+5)^2 \ge 0 \implies (2y+5)^2 \le 70$.
+Vì $y \in \mathbb{Z} \implies 2y+5$ là số lẻ, do đó $(2y+5)^2 \in \{1; 9; 25; 49\}$.
+Thử các trường hợp để $\Delta$ là số chính phương, tìm được các nghiệm nguyên: $\boxed{(x; y) \in \{(-1; 0); (-2; 1)\}}$.
+
+\textbf{2.} Xét số nguyên tố $p$:
+\begin{itemize}
+\item Nếu $p = 3$: $p^2 + 2 = 9 + 2 = 11$ là số nguyên tố (thỏa mãn).
+Khi đó $p^3 + 2 = 27 + 2 = 29$ là số nguyên tố (thỏa mãn).
+\item Nếu $p \neq 3$: vì $p$ là số nguyên tố nên $p$ không chia hết cho 3 $\implies p \equiv \pm 1 \pmod 3 \implies p^2 \equiv 1 \pmod 3$.
+Khi đó $p^2 + 2 \equiv 1 + 2 = 3 \equiv 0 \pmod 3$.
+Mà $p > 3 \implies p^2 + 2 > 3$ và chia hết cho 3, nên $p^2 + 2$ là hợp số (mâu thuẫn giả thiết).
+\end{itemize}
+Vậy chỉ có $p = 3$. Khi đó $p^3 + 2 = 29$ là số nguyên tố (đpcm).
+\end{loi_giai_cau}

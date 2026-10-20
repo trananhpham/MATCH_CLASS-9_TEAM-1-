@@ -1,0 +1,196 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX program = pdflatex
+\documentclass[12pt,a4paper]{article}
+
+%% -- Encoding & Font (pdfLaTeX - Tối ưu tốc độ cao nhất trên Overleaf) --------
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage{times}
+\usepackage[vietnamese]{babel}
+\usepackage{amssymb}
+\DeclareUnicodeCharacter{2713}{\checkmark}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{00B2}{\textsuperscript{2}}
+\DeclareUnicodeCharacter{00B3}{\textsuperscript{3}}
+\DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}}
+
+%% -- Toán học ----------------------------------------------------------------
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{cases}
+
+%% -- Trang / Layout ----------------------------------------------------------
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2cm,headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+
+%% -- Hyperref ----------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  urlcolor=blue!70!black,
+  pdfencoding=auto
+}
+
+%% -- Màu & Box ---------------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+%% -- Danh sách / Bảng --------------------------------------------------------
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\setlist{nosep,leftmargin=*}
+\usepackage{multicol}
+
+%% -- Định nghĩa màu sắc ------------------------------------------------------
+\definecolor{titlebg}{RGB}{0,55,120}
+\definecolor{mainblue}{RGB}{15,95,175}
+\definecolor{lightblue}{RGB}{225,238,255}
+\definecolor{maingreen}{RGB}{5,110,65}
+\definecolor{lightgreen}{RGB}{220,255,238}
+\definecolor{warnbg}{RGB}{255,248,220}
+\definecolor{warnborder}{RGB}{200,150,0}
+
+%% -- Box câu hỏi (xanh) ------------------------------------------------------
+\newtcolorbox{de_cau}[2]{
+  colback=lightblue,
+  colframe=mainblue,
+  arc=0pt, boxrule=0.8pt,
+  title={\large #1 \normalfont\normalsize\itshape #2},
+  fonttitle=\color{white}\bfseries,
+  colbacktitle=mainblue,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  before upper={\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}}
+}
+
+%% -- Box lời giải (xanh lá) --------------------------------------------------
+\newtcolorbox{loi_giai_cau}{
+  colback=lightgreen,
+  colframe=maingreen,
+  arc=0pt, boxrule=0.8pt,
+  title={Lời giải \& Đáp án},
+  fonttitle=\color{white}\bfseries,
+  colbacktitle=maingreen,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  before upper={\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}}
+}
+
+%% -- Header / Footer ---------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape\color{mainblue} Tuyển tập Đề thi Toán lớp 9 -- Tỉnh Lạng Sơn}
+\fancyhead[R]{\small\itshape\color{mainblue} (Phần Đại số -- Có Lời giải chi tiết)}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering\vspace*{2.0cm}
+  \begin{tcolorbox}[
+    colback=titlebg, colframe=titlebg!80!black,
+    arc=10pt, boxrule=2pt,
+    width=\textwidth,
+    halign=center,
+    top=24pt, bottom=24pt
+  ]
+    {\color{white}\fontsize{24}{30}\selectfont\bfseries
+      TỔNG HỢP 50 ĐỀ THI TOÁN LỚP 9}\\[10pt]
+    {\color{white}\Large\bfseries TỈNH LẠNG SƠN}\\[16pt]
+    {\color{white}\large Chỉ phần Đại số -- Đầy đủ Lời giải chi tiết}\\[8pt]{\color{white}\large\bfseries TẬP 2: ĐỀ 26 ĐẾN ĐỀ 50}
+  \end{tcolorbox}
+
+  \vspace{1.0cm}
+  \begin{tcolorbox}[colback=warnbg,colframe=warnborder,arc=5pt,
+    boxrule=0.6pt,width=0.9\textwidth,halign=left]
+    \begin{itemize}[leftmargin=1.5em]
+      \item \textbf{Đầy đủ 50 đề thi} từ năm 2012 đến 2026 của tỉnh Lạng Sơn.
+      \item Phần \textbf{Hình học} đã được loại bỏ hoàn toàn theo yêu cầu.
+      \item \textbf{100\% câu hỏi} đều có phần \textbf{Lời giải \& Đáp án chi tiết}.
+      \item Tối ưu hóa biên dịch siêu tốc, hoàn toàn không bị Timeout trên Overleaf.
+    \end{itemize}
+  \end{tcolorbox}
+
+  \vfill
+  {\small\color{gray}\today}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+%% -- Đề 26 ---
+\input{de_26}
+\clearpage
+%% -- Đề 27 ---
+\input{de_27}
+\clearpage
+%% -- Đề 28 ---
+\input{de_28}
+\clearpage
+%% -- Đề 29 ---
+\input{de_29}
+\clearpage
+%% -- Đề 30 ---
+\input{de_30}
+\clearpage
+%% -- Đề 31 ---
+\input{de_31}
+\clearpage
+%% -- Đề 32 ---
+\input{de_32}
+\clearpage
+%% -- Đề 33 ---
+\input{de_33}
+\clearpage
+%% -- Đề 34 ---
+\input{de_34}
+\clearpage
+%% -- Đề 35 ---
+\input{de_35}
+\clearpage
+%% -- Đề 36 ---
+\input{de_36}
+\clearpage
+%% -- Đề 37 ---
+\input{de_37}
+\clearpage
+%% -- Đề 38 ---
+\input{de_38}
+\clearpage
+%% -- Đề 39 ---
+\input{de_39}
+\clearpage
+%% -- Đề 40 ---
+\input{de_40}
+\clearpage
+%% -- Đề 41 ---
+\input{de_41}
+\clearpage
+%% -- Đề 42 ---
+\input{de_42}
+\clearpage
+%% -- Đề 43 ---
+\input{de_43}
+\clearpage
+%% -- Đề 44 ---
+\input{de_44}
+\clearpage
+%% -- Đề 45 ---
+\input{de_45}
+\clearpage
+%% -- Đề 46 ---
+\input{de_46}
+\clearpage
+%% -- Đề 47 ---
+\input{de_47}
+\clearpage
+%% -- Đề 48 ---
+\input{de_48}
+\clearpage
+%% -- Đề 49 ---
+\input{de_49}
+\clearpage
+%% -- Đề 50 ---
+\input{de_50}
+\clearpage
+\end{document}

@@ -1,0 +1,68 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX program = pdflatex
+\documentclass[12pt,a4paper]{article}
+
+%% -- Encoding & Font (pdfLaTeX - Nhanh nhất trên Overleaf) --------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage{times}
+\usepackage[vietnamese]{babel}
+\usepackage{amssymb}
+\DeclareUnicodeCharacter{2713}{\checkmark}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{00B2}{\textsuperscript{2}}
+\DeclareUnicodeCharacter{00B3}{\textsuperscript{3}}
+\DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}}
+
+%% -- Toán học ----------------------------------------------------------------
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{cases}
+
+%% -- Trang / Layout ----------------------------------------------------------
+\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.2cm,right=2cm]{geometry}
+\usepackage{fancyhdr}
+
+%% -- Hyperref ----------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  urlcolor=blue!70!black,
+  pdfencoding=auto
+}
+
+%% -- Màu & Box ---------------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+%% -- Danh sách / Bảng --------------------------------------------------------
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\setlist{nosep,leftmargin=*}
+\usepackage{multicol}
+
+%% -- Định nghĩa màu sắc ------------------------------------------------------
+\definecolor{titlebg}{RGB}{0,55,120}
+\definecolor{mainblue}{RGB}{15,95,175}
+\definecolor{lightblue}{RGB}{225,238,255}
+\definecolor{maingreen}{RGB}{5,110,65}
+\definecolor{lightgreen}{RGB}{220,255,238}
+\definecolor{warnbg}{RGB}{255,248,220}
+\definecolor{warnborder}{RGB}{200,150,0}
+
+%% -- Header / Footer ---------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape\color{mainblue} Báo cáo Tổng thể -- Dự án 50 Đề thi Toán 9 Lạng Sơn}
+\fancyhead[R]{\small\itshape\color{mainblue} Bản chuẩn hóa LaTeX}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\begin{document}
+
+\input{bao_cao_tong_the}
+
+\end{document}

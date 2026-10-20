@@ -1,0 +1,74 @@
+﻿%% Đề 35 -- de-tuyen-sinh-lop-10-mon-toan-chuyen-nam-2025-2026-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 35}%
+  {Kỳ thi Tuyển sinh vào lớp 10 THPT — Năm học 2025--2026}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 35 — Tuyển sinh vào lớp 10 THPT — Năm học 2025--2026}
+
+\begin{de_cau}{Câu 1}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tính: $A = \sqrt{5+2\sqrt{6}} + \sqrt{5-2\sqrt{6}}$.
+  \item Rút gọn:
+  \[B = \left(\dfrac{\sqrt{x}+1}{\sqrt{x}}\cdot\dfrac{1}{\sqrt{x}-1}+\dfrac{1}{x-\sqrt{x}}\right)\cdot\sqrt{x}\]
+  với $x > 0,\; x \neq 1$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $\sqrt{5+2\sqrt{6}}=\sqrt{(\sqrt{3}+\sqrt{2})^2}=\sqrt{3}+\sqrt{2}$; $\sqrt{5-2\sqrt{6}}=\sqrt{3}-\sqrt{2}$.
+
+$A=(\sqrt{3}+\sqrt{2})+(\sqrt{3}-\sqrt{2})=\boxed{2\sqrt{3}}$.
+
+\textbf{b)} $\dfrac{\sqrt{x}+1}{\sqrt{x}(\sqrt{x}-1)}+\dfrac{1}{\sqrt{x}(\sqrt{x}-1)}=\dfrac{\sqrt{x}+2}{\sqrt{x}(\sqrt{x}-1)}$.
+
+$B=\dfrac{\sqrt{x}+2}{\sqrt{x}(\sqrt{x}-1)}\cdot\sqrt{x}=\boxed{\dfrac{\sqrt{x}+2}{\sqrt{x}-1}}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Giải phương trình: $x^2 - 9x + 18 = \sqrt{x-3}$.
+  \item Giải hệ phương trình:
+  \[\begin{cases} x^2+y^2=5 \\ x^3-y^3=5 \end{cases}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $x\ge3$. Đặt $t=\sqrt{x-3}\ge0$, $x=t^2+3$:
+\[(t^2+3)^2-9(t^2+3)+18=t \Rightarrow t^4-3t^2-t=0 \Rightarrow t(t^3-3t-1)=0.\]
+$t=0\Rightarrow x=3$: $9-27+18=0$ \checkmark . Vậy $\boxed{x=3}$.
+
+\textbf{b)} $x^3-y^3=(x-y)(x^2+xy+y^2)=5$ và $x^2+y^2=5$.
+
+$(x-y)(5+xy)=5$. Thử $x=2,y=1$: $x^2+y^2=5$ \checkmark ; $8-1=7\neq5$.
+
+Thử $x=2,y=-1$: $4+1=5$ \checkmark ; $8+1=9\neq5$. Cần giải số đầy đủ -- nghiệm gần $x\approx2.19,y\approx-0.46$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tìm các cặp số nguyên $(x;y)$ thỏa mãn: $x^2 + 3y = 4$.
+  \item Cho $n$ là số nguyên. Chứng minh $n^3-n$ chia hết cho $6$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $3y=4-x^2\Rightarrow 3\mid(4-x^2)$. $x^2\equiv1\pmod3$ nếu $x\not\equiv0$, nên $4-x^2\equiv3\equiv0$. $x\equiv0\pmod3$: $4-x^2\equiv4$: không $\vdots3$.
+
+Vậy $x\equiv\pm1\pmod3$: $y=\dfrac{4-x^2}{3}$.
+
+$x=1$: $y=1$. $x=-1$: $y=1$. $x=2$: $y=0$. $x=-2$: $y=0$. $x=4$: $y=-4$. Vân vân (vô hạn nghiệm nguyên).
+
+Nếu đề hỏi $x,y$ dương và $|x|\le$ giới hạn: $(x;y)\in\{(\pm1;1),(\pm2;0)\}$.
+
+\textbf{b)} $n^3-n=(n-1)n(n+1)$: tích ba số nguyên liên tiếp $\vdots2$ và $\vdots3$, nên $\vdots6$. $\square$
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{0,5 điểm}
+Cho $a, b, c > 0$ thỏa mãn $a + b + c = 1$. Tìm giá trị nhỏ nhất của:
+\[P = \dfrac{a^2}{b+c} + \dfrac{b^2}{c+a} + \dfrac{c^2}{a+b}.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Theo Cauchy-Schwarz (Engel):
+\[P=\sum\dfrac{a^2}{b+c}\ge\dfrac{(a+b+c)^2}{\sum(b+c)}=\dfrac{1}{2(a+b+c)}=\dfrac{1}{2}.\]
+Dấu $=$ khi $a=b=c=\dfrac{1}{3}$. Vậy $P_{\min}=\boxed{\dfrac{1}{2}}$.
+\end{loi_giai_cau}

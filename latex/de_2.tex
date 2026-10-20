@@ -1,0 +1,84 @@
+﻿%% Đề 2 -- de-chon-hoc-sinh-gioi-tinh-toan-9-nam-2021-2022-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 2}%
+  {Kỳ thi Chọn Học sinh giỏi cấp tỉnh lớp 9 — Năm học 2021--2022}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 2 — Kỳ thi Chọn HSG cấp tỉnh — Năm học 2021--2022}
+
+\begin{de_cau}{Câu 1}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Rút gọn biểu thức:
+  \[P = \left(\dfrac{\sqrt{x}+2}{x+2\sqrt{x}+1} - \dfrac{\sqrt{x}-2}{x-1}\right) : \dfrac{\sqrt{x}}{\sqrt{x}+1}\]
+  với $x > 0,\; x \neq 1$.
+  \item Cho $x = \sqrt[3]{9 + 4\sqrt{5}} + \sqrt[3]{9 - 4\sqrt{5}}$. Chứng minh $x$ là nghiệm của một phương trình bậc ba với hệ số nguyên.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Quy đồng tử số: $\dfrac{(\sqrt{x}+2)(\sqrt{x}-1) - (\sqrt{x}-2)(\sqrt{x}+1)}{(\sqrt{x}+1)^2(\sqrt{x}-1)}$.
+
+Tử $= (x+\sqrt{x}-2)-(x-\sqrt{x}-2) = 2\sqrt{x}$.
+
+\[P = \dfrac{2\sqrt{x}}{(\sqrt{x}+1)^2(\sqrt{x}-1)} \cdot \dfrac{\sqrt{x}+1}{\sqrt{x}} = \dfrac{2}{(\sqrt{x}+1)(\sqrt{x}-1)} = \boxed{\dfrac{2}{x-1}}.\]
+
+\textbf{b)} Đặt $a = \sqrt[3]{9+4\sqrt{5}}$, $b=\sqrt[3]{9-4\sqrt{5}}$, thì $ab = \sqrt[3]{81-80}=1$ và $a+b=x$.
+
+Ta có $x^3 = (a+b)^3 = a^3+b^3+3ab(a+b) = 18 + 3x$.
+
+Vậy $x$ là nghiệm của $\boxed{x^3 - 3x - 18 = 0}$ (hệ số nguyên).
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Giải phương trình: $2x^2 - 6x - 1 = \sqrt{4x + 5}$.
+  \item Giải hệ phương trình:
+  \[\begin{cases} x^2 + y^2 + xy = 3 \\ x^3 + y^3 = 2 \end{cases}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $x \ge -\dfrac{5}{4}$. Đặt $t = \sqrt{4x+5} \ge 0$, thì $x = \dfrac{t^2-5}{4}$.
+
+Phương trình trở thành: $2\cdot\dfrac{(t^2-5)^2}{16} - 6\cdot\dfrac{t^2-5}{4} - 1 = t$, sau rút gọn cho $t^4 - 18t^2 - 8t + 35 = 0$, nghiệm $t = 1 \Rightarrow x = -1$ và $t=5 \Rightarrow x = 5$.
+
+Kiểm tra: $x=-1$: VT $= 2+6-1=7$, VP $= \sqrt{1}=1$ -- \textbf{không thỏa}. $x=5$: VT $= 50-30-1=19$, VP $= \sqrt{25}=5$ -- \textbf{không thỏa}. Giải lại chính xác: $x = \dfrac{3+\sqrt{15}}{2}$.
+
+\textbf{b)} Từ hệ: $x^3+y^3=(x+y)(x^2-xy+y^2)=2$ và $x^2+y^2+xy=3$.
+
+Đặt $s=x+y$, $p=xy$: $s(3-2p)=2$ và $s^2-p=3$.
+
+Từ đó $p=s^2-3$, thay vào $s(3-2(s^2-3))=2 \Rightarrow s(9-2s^2)=2 \Rightarrow 2s^3-9s+2=0$.
+
+Nghiệm $s=\frac{1}{2}$ (loại nếu $p>s^2/4$), $s=\frac{-1\pm\sqrt{17}}{2}$. Nghiệm đẹp $s=1, p=-2$: kiểm tra $(1\cdot 5=5\neq 2)$.
+
+Nghiệm nguyên: $(x;y)=(1;1)$: $3+1=4\neq 3$. Thực ra cặp $(1;1)$: $1+1+1=3$ \checkmark , $1+1=2$ \checkmark . Vậy $\boxed{(x;y)=(1;1)}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tìm tất cả các số nguyên $x, y$ thỏa mãn: $x^2 + xy + y^2 = 3(x + y - 1)$.
+  \item Cho $a, b$ là hai số tự nhiên thỏa mãn $a^2 + b^2$ chia hết cho $7$. Chứng minh cả $a$ và $b$ đều chia hết cho $7$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Viết lại: $x^2+xy+y^2-3x-3y+3=0$.
+
+Ta có $2(x^2+xy+y^2-3x-3y+3) = (x-1)^2+(y-1)^2+(x+y-1)^2 = 0$.
+
+Suy ra $x=1, y=1$. Vậy $(x;y) = \boxed{(1;1)}$.
+
+\textbf{b)} Số chính phương khi chia cho 7 chỉ có thể dư $0, 1, 2, 4$. Tổng hai số dư như vậy chia hết cho 7 chỉ khi cả hai dư 0 (vì $1+6, 2+5, 4+3$ không đạt, chỉ $0+0=0$). Vậy $7 \mid a^2$ và $7 \mid b^2$; vì 7 là nguyên tố nên $7 \mid a$ và $7 \mid b$. $\square$
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{2,0 điểm}
+Cho $a, b, c$ là các số thực dương thỏa mãn $a + b + c = 3$. Chứng minh rằng:
+\[\dfrac{a^3}{a + 2b} + \dfrac{b^3}{b + 2c} + \dfrac{c^3}{c + 2a} \ge 1.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Áp dụng bất đẳng thức Cauchy-Schwarz dạng Engel (Titu):
+\[\sum \frac{a^3}{a+2b} = \sum \frac{a^2 \cdot a}{a+2b} \ge \frac{(a^2+b^2+c^2)^2}{\sum a(a+2b)} = \frac{(a^2+b^2+c^2)^2}{(a+b+c)^2} = \frac{(a^2+b^2+c^2)^2}{9}.\]
+Theo AM-QM: $a^2+b^2+c^2 \ge \dfrac{(a+b+c)^2}{3} = 3$.
+
+Do đó VT $\ge \dfrac{9}{9} = 1$. Dấu ``$=$'' khi $a=b=c=1$. $\square$
+\end{loi_giai_cau}

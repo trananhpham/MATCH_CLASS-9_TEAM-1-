@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngân Hàng Câu Hỏi Toán Lớp 9 – Lạng Sơn</title>
+
+  <!-- KaTeX CDN -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Loading Screen ─────────────────────────────────────── -->
+<div id="loading">
+  <div class="spinner"></div>
+  <div style="font-size:16px;font-weight:600;">Đang tải dữ liệu…</div>
+  <div style="font-size:13px;opacity:.7;">200 câu hỏi · 7 chủ đề · 50 đề thi</div>
+</div>
+
+<!-- ── Header ─────────────────────────────────────────────── -->
+<header id="app-header">
+  <div class="header-logo">📐</div>
+  <div class="header-title">
+    <h1>Ngân Hàng Câu Hỏi Toán Lớp 9 – Tỉnh Lạng Sơn</h1>
+    <p>Đại số · 50 đề thi · Năm học 2012 – 2026 · Đầy đủ lời giải</p>
+  </div>
+  <div class="header-stats">
+    <div class="stat-chip">
+      <span class="num" id="stat-total">—</span>
+      <span class="lbl">Câu hỏi</span>
+    </div>
+    <div class="stat-chip">
+      <span class="num">50</span>
+      <span class="lbl">Đề thi</span>
+    </div>
+    <div class="stat-chip">
+      <span class="num">7</span>
+      <span class="lbl">Chủ đề</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── Main Layout ────────────────────────────────────────── -->
+<div id="layout">
+
+  <!-- ── Sidebar ─────────────────────────────────────────── -->
+  <aside id="sidebar">
+
+    <!-- Search -->
+    <div class="filter-section">
+      <div class="filter-title">🔍 Tìm kiếm</div>
+      <div class="search-wrap">
+        <span class="icon">⌕</span>
+        <input type="text" id="search-input"
+               placeholder="Tìm theo nội dung, kỹ thuật…"
+               autocomplete="off">
+      </div>
+    </div>
+
+    <!-- Exam type -->
+    <div class="filter-section">
+      <div class="filter-title">📋 Loại kỳ thi</div>
+      <div class="check-list" id="filter-type">
+        <label class="check-item">
+          <input type="checkbox" value="HSG_tinh" checked>
+          <span class="label">🏆 Thi HSG tỉnh</span>
+          <span class="count" id="cnt-hsg">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="Tuyen_sinh_10" checked>
+          <span class="label">📝 Tuyển sinh lớp 10</span>
+          <span class="count" id="cnt-ts">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="Hoc_ky" checked>
+          <span class="label">📅 Kiểm tra Học kỳ</span>
+          <span class="count" id="cnt-hk">—</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Topics -->
+    <div class="filter-section">
+      <div class="filter-title">📚 Chủ đề</div>
+      <div class="check-list" id="filter-topic">
+        <label class="check-item">
+          <input type="checkbox" value="can_thuc" checked>
+          <span class="label">√ Căn thức</span>
+          <span class="count">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="phuong_trinh" checked>
+          <span class="label">= Phương trình</span>
+          <span class="count">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="he_phuong_trinh" checked>
+          <span class="label">{ Hệ phương trình</span>
+          <span class="count">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="ham_so_do_thi" checked>
+          <span class="label">∫ Hàm số & Đồ thị</span>
+          <span class="count">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="bat_dang_thuc_cuc_tri" checked>
+          <span class="label">≥ BĐT & Cực trị</span>
+          <span class="count">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="so_hoc_nguyen" checked>
+          <span class="label">ℤ Số học & Nghiệm nguyên</span>
+          <span class="count">—</span>
+        </label>
+        <label class="check-item">
+          <input type="checkbox" value="toan_thuc_te" checked>
+          <span class="label">🚗 Toán thực tế</span>
+          <span class="count">—</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Difficulty -->
+    <div class="filter-section">
+      <div class="filter-title">⭐ Độ khó</div>
+      <div class="diff-list" id="filter-diff">
+        <label class="diff-item">
+          <input type="checkbox" value="1" checked>
+          <span class="stars">★☆☆☆☆</span>
+          <span class="dlabel">Dễ</span>
+        </label>
+        <label class="diff-item">
+          <input type="checkbox" value="2" checked>
+          <span class="stars">★★☆☆☆</span>
+          <span class="dlabel">Trung bình dễ</span>
+        </label>
+        <label class="diff-item">
+          <input type="checkbox" value="3" checked>
+          <span class="stars">★★★☆☆</span>
+          <span class="dlabel">Trung bình</span>
+        </label>
+        <label class="diff-item">
+          <input type="checkbox" value="4" checked>
+          <span class="stars">★★★★☆</span>
+          <span class="dlabel">Khó</span>
+        </label>
+        <label class="diff-item">
+          <input type="checkbox" value="5" checked>
+          <span class="stars">★★★★★</span>
+          <span class="dlabel">Rất khó</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Year -->
+    <div class="filter-section">
+      <div class="filter-title">📅 Năm học</div>
+      <select id="year-select">
+        <option value="">Tất cả các năm</option>
+      </select>
+    </div>
+
+    <!-- Reset -->
+    <button id="btn-reset">↺ Đặt lại bộ lọc</button>
+
+  </aside>
+
+  <!-- ── Main ────────────────────────────────────────────── -->
+  <main id="main">
+
+    <!-- Toolbar -->
+    <div id="toolbar">
+      <div class="result-count" id="result-count">
+        Hiển thị <strong>—</strong> câu hỏi
+      </div>
+      <div id="active-filters"></div>
+      <div class="sort-wrap">
+        <span>Sắp xếp:</span>
+        <select id="sort-select">
+          <option value="id_asc">Mã tăng dần</option>
+          <option value="id_desc">Mã giảm dần</option>
+          <option value="diff_asc">Độ khó: Dễ → Khó</option>
+          <option value="diff_desc">Độ khó: Khó → Dễ</option>
+          <option value="score_desc">Điểm cao nhất</option>
+          <option value="year_desc">Năm mới nhất</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Question list -->
+    <div id="questions-list"></div>
+
+    <!-- Empty state -->
+    <div id="empty-state">
+      <div class="icon">🔎</div>
+      <div class="msg">Không tìm thấy câu hỏi nào</div>
+      <div class="sub">Thử thay đổi bộ lọc hoặc từ khoá tìm kiếm</div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination"></div>
+
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

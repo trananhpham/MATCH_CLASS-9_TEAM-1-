@@ -1,0 +1,73 @@
+﻿%% Đề 33 -- de-tuyen-sinh-lop-10-mon-toan-chuyen-nam-2023-2024-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 33}%
+  {Kỳ thi Tuyển sinh vào lớp 10 THPT — Năm học 2023--2024}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 33 — Tuyển sinh vào lớp 10 THPT — Năm học 2023--2024}
+
+\begin{de_cau}{Câu 1}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tính: $A = \sqrt{18} + \sqrt{8} - \sqrt{50}$.
+  \item Rút gọn:
+  \[B = \left(\dfrac{2}{\sqrt{x}-1}+\dfrac{1}{\sqrt{x}+1}\right) \cdot \dfrac{x-1}{3\sqrt{x}}\]
+  với $x > 0,\; x \neq 1$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $A=3\sqrt{2}+2\sqrt{2}-5\sqrt{2}=\boxed{0}$.
+
+\textbf{b)} $\dfrac{2(\sqrt{x}+1)+(\sqrt{x}-1)}{(\sqrt{x}-1)(\sqrt{x}+1)}=\dfrac{3\sqrt{x}+1}{x-1}$.
+
+$B=\dfrac{3\sqrt{x}+1}{x-1}\cdot\dfrac{x-1}{3\sqrt{x}}=\boxed{\dfrac{3\sqrt{x}+1}{3\sqrt{x}}}=1+\dfrac{1}{3\sqrt{x}}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Giải phương trình: $x^2 - 6x + 5 = \sqrt{x-1}$.
+  \item Giải hệ phương trình:
+  \[\begin{cases} x + y + xy = 3 \\ x^2+y^2 = 2 \end{cases}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $x\ge1$. Đặt $t=\sqrt{x-1}\ge0$:
+\[(t^2+1)^2-6(t^2+1)+5=t \Rightarrow t^4-4t^2-t=0 \Rightarrow t(t^3-4t-1)=0.\]
+$t=0\Rightarrow x=1$: $1-6+5=0$ \checkmark . Nghiệm $\boxed{x=1}$.
+
+\textbf{b)} $(x+y)+xy=3$ và $(x+y)^2-2xy=2$. Đặt $s=x+y$, $p=xy$: $s+p=3$ và $s^2-2p=2$.
+
+$p=3-s$: $s^2-2(3-s)=2\Rightarrow s^2+2s-8=0\Rightarrow(s+4)(s-2)=0$.
+
+$s=2, p=1$: $x+y=2,xy=1\Rightarrow x=y=1$. Nghiệm $\boxed{(x;y)=(1;1)}$.
+
+$s=-4, p=7$: $\Delta=16-28<0$ -- vô nghiệm thực.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tìm tất cả cặp số nguyên $(x;y)$ thỏa mãn: $2x^2 + y^2 - 2xy = 4$.
+  \item Cho $n$ là số nguyên dương. Chứng minh $3^{2n}+7$ chia hết cho $8$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $(x-y)^2+x^2=4$. Vì $x^2\le4$ nên $x\in\{-2,-1,0,1,2\}$.
+
+$x=0$: $(y)^2=4\Rightarrow y=\pm2$. $x=\pm2$: $(2-y)^2=0$ hay $(-2-y)^2=0$: $y=2$ hoặc $y=-2$.
+
+Nghiệm: $(x;y)\in\{(0;2),(0;-2),(2;2),(-2;-2)\}$.
+
+\textbf{b)} $3^{2n}=9^n=(8+1)^n\equiv1^n=1\pmod{8}$, nên $3^{2n}+7\equiv1+7=8\equiv0\pmod{8}$. $\square$
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{0,5 điểm}
+Cho $a, b > 0$ thỏa mãn $a^2 + b^2 = 1$. Tìm giá trị lớn nhất của $T = a^3b + ab^3$.
+\end{de_cau}
+
+\begin{loi_giai_cau}
+$T=ab(a^2+b^2)=ab\cdot1=ab$.
+
+Theo AM-GM: $ab\le\dfrac{a^2+b^2}{2}=\dfrac{1}{2}$.
+
+Dấu $=$ khi $a=b=\dfrac{1}{\sqrt{2}}$. Vậy $T_{\max}=\boxed{\dfrac{1}{2}}$.
+\end{loi_giai_cau}

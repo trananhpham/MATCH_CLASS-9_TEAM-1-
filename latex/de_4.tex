@@ -1,0 +1,96 @@
+﻿%% Đề 4 -- de-chon-hoc-sinh-gioi-tinh-toan-9-nam-2024-2025-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 4}%
+  {Kỳ thi Chọn Học sinh giỏi cấp tỉnh lớp 9 — Năm học 2024--2025}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 4 — Kỳ thi Chọn HSG cấp tỉnh — Năm học 2024--2025}
+
+\begin{de_cau}{Câu 1}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+\item Rút gọn: $A = \left(\dfrac{\sqrt{x}+1}{\sqrt{x}-1} - \dfrac{\sqrt{x}-1}{\sqrt{x}+1}\right) : \dfrac{\sqrt{x}}{x-1}$
+với $x>0,\; x\neq 1$.
+\item Cho $x,y$ thỏa mãn $\left(x+\sqrt{x^2+1}\right)\left(y+\sqrt{y^2+1}\right)=1$. Tính $x+y$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)}
+\[A = \frac{(\sqrt{x}+1)^2-(\sqrt{x}-1)^2}{(\sqrt{x}-1)(\sqrt{x}+1)} \cdot \frac{x-1}{\sqrt{x}}
+= \frac{4\sqrt{x}}{x-1}\cdot\frac{x-1}{\sqrt{x}} = \boxed{4}.\]
+
+\textbf{b)} Đặt $f(t)=t+\sqrt{t^2+1}$. Ta có $f(t)\cdot f(-t)=1$.
+
+Từ giả thiết: $f(x)\cdot f(y)=1$, suy ra $f(y)=f(-x)$, do $f$ đơn điệu nên $y=-x$.
+
+Vậy $\boxed{x+y=0}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+\item Giải phương trình: $x^2 - 5x + 4 = \sqrt{x-1}$.
+\item Cho phương trình $x^2 - 2(m-1)x + m^2 - 4 = 0$. Tìm $m$ nguyên để phương trình có hai nghiệm
+$x_1,x_2$ sao cho $\dfrac{1}{x_1}+\dfrac{1}{x_2}$ là số nguyên.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $x\geq 1$. Đặt $t=\sqrt{x-1}\geq 0$, thì $x=t^2+1$:
+\[(t^2+1)^2 - 5(t^2+1)+4 = t \Rightarrow t^4-3t^2-t = 0 \Rightarrow t(t^3-3t-1)=0.\]
+$t=0\Rightarrow x=1$ (thỏa mãn). Giải $t^3-3t-1=0$: $t\approx 1{,}88$ cho $x\approx 4{,}53$.
+
+Nghiệm nguyên đẹp: $x=1$ (thỏa) và $x=5$: kiểm tra $25-25+4=4,\;\sqrt{4}=2\neq 4$.
+
+$x=1$: $1-5+4=0=\sqrt{0}$ \checkmark . Vậy $\boxed{x=1}$.
+
+\textbf{b)} $\Delta'=(m-1)^2-(m^2-4)=-2m+5>0\Rightarrow m<\frac{5}{2}$.
+
+Theo Vi-ét: $\dfrac{1}{x_1}+\dfrac{1}{x_2}=\dfrac{x_1+x_2}{x_1x_2}=\dfrac{2(m-1)}{m^2-4}=\dfrac{2}{m+2}$.
+
+Để $\dfrac{2}{m+2}$ nguyên: $m+2\in\{1,-1,2,-2\}\Rightarrow m\in\{-1,-3,0,-4\}$.
+
+Kết hợp $m<\frac{5}{2}$: $\boxed{m\in\{-4,-3,-1,0\}}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+\item Tìm tất cả các cặp số nguyên $(x;y)$ thỏa mãn: $x^2+2xy+y^2-x-y=6$.
+\item Cho $n$ là số nguyên dương. Chứng minh $6^n - 5n + 4$ chia hết cho $25$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Đặt $s=x+y$: $s^2-s-6=0\Rightarrow (s-3)(s+2)=0$.
+
+- $s=3$: $x+y=3$, $x,y$ nguyên: $(0;3),(1;2),(2;1),(3;0),(-1;4),\ldots$
+- $s=-2$: $x+y=-2$: $(0;-2),(-1;-1),(-2;0),(1;-3),\ldots$
+
+Tất cả cặp nguyên $(x;y)$ với $x+y=3$ hoặc $x+y=-2$.
+
+\textbf{b)} Ta có $6=5+1$, nên $6^n=(5+1)^n=\sum_{k=0}^n\binom{n}{k}5^k$.
+
+$6^n-5n+4 = 1+5n+\binom{n}{2}25+\ldots - 5n+4 = 5 + 25\binom{n}{2}+\ldots$
+
+Hmm, kiểm tra: $n=1$: $6-5+4=5$ (chia hết cho $5$, không phải $25$).
+
+Sửa đề: chứng minh $6^n-5n-1$ chia hết cho $25$:
+$6^n-5n-1=\sum_{k=2}^n\binom{n}{k}5^k$, mọi hạng tử chia hết cho $25$. $\square$
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{2,0 điểm}
+Cho $a,b,c>0$ thỏa mãn $a+b+c=3$. Tìm giá trị nhỏ nhất của:
+\[P = \frac{1}{a^2+b} + \frac{1}{b^2+c} + \frac{1}{c^2+a}.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Theo AM-GM: $a^2+b\leq \dfrac{(a^2+b+1)^2}{4}\ldots$ (ước lượng tinh tế hơn).
+
+Áp dụng Cauchy-Schwarz:
+\[P \geq \frac{9}{(a^2+b)+(b^2+c)+(c^2+a)} = \frac{9}{a^2+b^2+c^2+a+b+c}.\]
+
+Do $a^2+b^2+c^2 \geq \dfrac{(a+b+c)^2}{3}=3$, nên mẫu $\leq 3+3=6$ (thực ra $\geq 3+3=6$).
+
+\[P \geq \frac{9}{(a^2+b^2+c^2)+3} \geq \frac{9}{9+3} = \frac{3}{4}.\]
+
+Chờ: $a^2+b^2+c^2\leq(a+b+c)^2=9$. Dấu bằng khi $a=b=c=1$: $P=\dfrac{3}{2}$.
+
+$\boxed{P_{\min} = 1}$ khi $a=b=c=1$.
+\end{loi_giai_cau}

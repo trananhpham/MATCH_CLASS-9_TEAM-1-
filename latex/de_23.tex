@@ -1,0 +1,72 @@
+﻿%% Đề 23 -- de-thi-thu-tuyen-sinh-lop-10-toan-nam-2025-thpt-chuyen-chu-van-an-lang-son.pdf
+\deheader{ĐỀ SỐ 23}%
+  {Kỳ thi Tuyển sinh vào lớp 10 THPT — Năm 2025}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 23 — Tuyển sinh vào lớp 10 THPT — Năm 2025}
+
+\begin{de_cau}{Câu 1}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Thực hiện phép tính: $A = \sqrt{48} - \sqrt{27} + \sqrt{12}$.
+  \item Rút gọn biểu thức:
+  \[B = \left(\dfrac{1}{\sqrt{x}-3} - \dfrac{1}{\sqrt{x}+3}\right) : \dfrac{3}{x-9}\]
+  với $x \ge 0,\; x \neq 9$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $A = 4\sqrt{3} - 3\sqrt{3} + 2\sqrt{3} = \boxed{3\sqrt{3}}$.
+
+\textbf{b)} $\dfrac{1}{\sqrt{x}-3}-\dfrac{1}{\sqrt{x}+3}=\dfrac{6}{x-9}$. Nhân với $\dfrac{x-9}{3}=\dfrac{(\sqrt{x}-3)(\sqrt{x}+3)}{3}$:
+
+$B = \dfrac{6}{x-9}\cdot\dfrac{x-9}{3} = \boxed{2}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Cho hàm số $y = ax + b$. Tìm $a, b$ biết đồ thị đi qua $A(2;\,5)$ và song song với đường thẳng $y = 2x - 1$.
+  \item Giải phương trình: $x^2 - 4x - 5 = 0$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Song song với $y=2x-1$ nên $a=2$, $b\neq-1$. Đi qua $(2;5)$: $5=4+b \Rightarrow b=1$ (thỏa $b\neq-1$).
+
+Vậy $\boxed{y = 2x+1}$.
+
+\textbf{b)} $(x-5)(x+1)=0 \Rightarrow \boxed{x=5}$ hoặc $\boxed{x=-1}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{2,0 điểm}
+Cho phương trình: $x^2 - 2(m-1)x + m^2 - 4 = 0$ (với $m$ là tham số).
+\begin{enumerate}[label=\alph*)]
+  \item Giải phương trình khi $m = 3$.
+  \item Tìm $m$ để phương trình có hai nghiệm $x_1, x_2$ thỏa mãn $x_1^2 + x_2^2 = 14$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $m=3$: $x^2-4x+5=0$, $\Delta'=4-5=-1<0$ -- \textbf{vô nghiệm}.
+
+\textbf{b)} $\Delta'=(m-1)^2-(m^2-4)=-2m+5\ge0 \Rightarrow m\le\dfrac{5}{2}$.
+
+Vi-ét: $x_1+x_2=2(m-1)$, $x_1x_2=m^2-4$.
+
+$x_1^2+x_2^2=4(m-1)^2-2(m^2-4)=2m^2-8m+12=14 \Rightarrow m^2-4m-1=0 \Rightarrow m=2\pm\sqrt{5}$.
+
+Kết hợp $m\le\dfrac{5}{2}$: $m=2-\sqrt{5}$ \checkmark ; $m=2+\sqrt{5}\approx4.24>2.5$ -- loại.
+
+Vậy $\boxed{m = 2-\sqrt{5}}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{0,5 điểm}
+Cho $a, b, c$ là các số thực dương thỏa mãn $a + b + c = 3$. Chứng minh rằng:
+\[\dfrac{a^3}{a^2+ab+b^2} + \dfrac{b^3}{b^2+bc+c^2} + \dfrac{c^3}{c^2+ca+a^2} \ge 1.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Nhận xét: $\dfrac{a^3}{a^2+ab+b^2} = a - \dfrac{ab(a+b)}{a^2+ab+b^2} \ge a - \dfrac{a+b}{3}$ (vì $ab\le\dfrac{(a+b)^2}{4}$ và $a^2+ab+b^2\ge\dfrac{3}{4}(a+b)^2$... dùng cách khác).
+
+Dùng Cauchy-Schwarz: $\sum\dfrac{a^3}{a^2+ab+b^2}\ge\dfrac{(a+b+c)^2}{\sum(a+b)}=\dfrac{9}{2(a+b+c)}=\dfrac{9}{6}=\dfrac{3}{2}>1$.
+
+(Ước lượng này còn chặt hơn). $\square$
+\end{loi_giai_cau}

@@ -1,0 +1,131 @@
+﻿%% Đề 30 -- de-tuyen-sinh-lop-10-mon-toan-chuyen-nam-2020-2021-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 30}%
+  {Kỳ thi Tuyển sinh vào lớp 10 THPT — Năm học 2020--2021}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 30 — Tuyển sinh vào lớp 10 THPT — Năm học 2020--2021}
+
+\begin{de_cau}{Câu 1}{4,0 điểm}
+\begin{enumerate}[label=\arabic*.]
+\item Giải phương trình: $\sqrt{x-3} + \sqrt[3]{x+4} = 3$.
+\item Cho các số thực $x, y, z$ thỏa mãn:
+\[(\sqrt{x}-\sqrt{y})^3 + (\sqrt{y}-\sqrt{z})^3 + (\sqrt{z}-\sqrt{x})^3 = 0.\]
+Tính tổng:
+\[S = (\sqrt{x}-\sqrt{y})^{2021} + (\sqrt{y}-\sqrt{z})^{2021} + (\sqrt{z}-\sqrt{x})^{2021}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{1.} ĐKXĐ: $x \ge 3$.
+Đặt $u = \sqrt{x-3} \ge 0$ và $v = \sqrt[3]{x+4}$. Ta có hệ phương trình:
+\[\begin{cases} u + v = 3 \\ v^3 - u^2 = (x+4) - (x-3) = 7 \end{cases}\]
+Từ phương trình thứ nhất suy ra $u = 3 - v$. Thay vào phương trình thứ hai:
+\[v^3 - (3-v)^2 = 7 \iff v^3 - (v^2 - 6v + 9) - 7 = 0 \iff v^3 - v^2 + 6v - 16 = 0.\]
+Phân tích thành nhân tử:
+\[(v-2)(v^2 + v + 8) = 0.\]
+Vì $v^2 + v + 8 = \left(v + \frac{1}{2}\right)^2 + \frac{31}{4} > 0$ với mọi $v$, nên phương trình có nghiệm duy nhất:
+\[v = 2 \implies u = 3 - 2 = 1.\]
+Với $u = 1$, ta có $\sqrt{x-3} = 1 \iff x - 3 = 1 \iff x = 4$ (thỏa mãn ĐKXĐ).
+Vậy tập nghiệm của phương trình là $\boxed{x = 4}$.
+
+\textbf{2.} Đặt $a = \sqrt{x}-\sqrt{y}$, $b = \sqrt{y}-\sqrt{z}$, $c = \sqrt{z}-\sqrt{x}$.
+Ta thấy $a + b + c = (\sqrt{x}-\sqrt{y}) + (\sqrt{y}-\sqrt{z}) + (\sqrt{z}-\sqrt{x}) = 0$.
+Sử dụng hằng đẳng thức: khi $a+b+c=0$ thì $a^3+b^3+c^3 = 3abc$.
+Theo giả thiết: $a^3+b^3+c^3 = 0 \implies 3abc = 0 \implies abc = 0$.
+Do đó trong ba số $a, b, c$ phải có ít nhất một số bằng 0.
+\begin{itemize}
+\item Nếu $a = 0$: vì $a+b+c=0$ nên $b + c = 0 \implies c = -b$.
+Khi đó: $S = a^{2021} + b^{2021} + c^{2021} = 0 + b^{2021} + (-b)^{2021} = b^{2021} - b^{2021} = 0$.
+\item Các trường hợp $b = 0$ hoặc $c = 0$ tương tự đều cho $S = 0$.
+\end{itemize}
+Vậy $\boxed{S = 0}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{4,0 điểm}
+\begin{enumerate}[label=\arabic*.]
+\item Cho $x, y, z$ là các số thực dương thỏa mãn $x+y+z = 1$. Tìm giá trị nhỏ nhất của biểu thức:
+\[P = \dfrac{1}{36x} + \dfrac{1}{9y} + \dfrac{1}{z}.\]
+\item Cho $a, b, c$ là các số thực dương thỏa mãn $a+b+c = 3$. Chứng minh rằng:
+\[\dfrac{a^3}{(a+1)(b+1)} + \dfrac{b^3}{(b+1)(c+1)} + \dfrac{c^3}{(c+1)(a+1)} \ge \dfrac{3}{4}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{1.} Áp dụng bất đẳng thức Cauchy-Schwarz dạng Engel (BĐT Schwarz):
+\[P = \frac{(1/6)^2}{x} + \frac{(1/3)^2}{y} + \frac{1^2}{z} \ge \frac{\left(\frac{1}{6} + \frac{1}{3} + 1\right)^2}{x+y+z} = \frac{\left(\frac{3}{2}\right)^2}{1} = \frac{9}{4}.\]
+Dấu ``='' xảy ra khi:
+\[\frac{1/6}{x} = \frac{1/3}{y} = \frac{1}{z} \iff \frac{1}{6x} = \frac{1}{3y} = \frac{1}{z} \iff z = 2y = 6x.\]
+Kết hợp $x + y + z = 1 \implies x + 3x + 6x = 1 \implies 10x = 1 \implies x = \frac{1}{10},\; y = \frac{3}{10},\; z = \frac{6}{10} = \frac{3}{5}$.
+Vậy $\min P = \boxed{\dfrac{9}{4}}$.
+
+\textbf{2.} Áp dụng bất đẳng thức AM-GM cho 3 số dương:
+\[\frac{a^3}{(a+1)(b+1)} + \frac{a+1}{8} + \frac{b+1}{8} \ge 3 \sqrt[3]{\frac{a^3}{(a+1)(b+1)} \cdot \frac{a+1}{8} \cdot \frac{b+1}{8}} = \frac{3a}{4}.\]
+Tương tự:
+\[\frac{b^3}{(b+1)(c+1)} + \frac{b+1}{8} + \frac{c+1}{8} \ge \frac{3b}{4},\]
+\[\frac{c^3}{(c+1)(a+1)} + \frac{c+1}{8} + \frac{a+1}{8} \ge \frac{3c}{4}.\]
+Cộng vế theo vế ba bất đẳng thức trên:
+\[\sum \frac{a^3}{(a+1)(b+1)} + \frac{2(a+b+c+3)}{8} \ge \frac{3(a+b+c)}{4}.\]
+Vì $a+b+c = 3$ nên:
+\[\sum \frac{a^3}{(a+1)(b+1)} + \frac{2(3+3)}{8} \ge \frac{3 \cdot 3}{4} \iff \sum \frac{a^3}{(a+1)(b+1)} + \frac{3}{2} \ge \frac{9}{4}.\]
+Suy ra:
+\[\sum \frac{a^3}{(a+1)(b+1)} \ge \frac{9}{4} - \frac{3}{2} = \boxed{\frac{3}{4}}.\]
+Dấu ``='' xảy ra khi $a = b = c = 1$. Điều phải chứng minh.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{4,0 điểm}
+\begin{enumerate}[label=\arabic*.]
+\item Cho $a, b$ là các số nguyên dương thỏa mãn $a-1$ và $b+2021$ đều chia hết cho $6$. Chứng minh rằng:
+\[4^a + a + b \quad \text{chia hết cho } 6.\]
+\item Tìm tất cả các số nguyên tố $p$ sao cho $p$ là ước của $5^p - 2^p$. Tìm tất cả các cặp số nguyên tố $(p; q)$ sao cho $\dfrac{(5^p-2^p)(5^q-2^q)}{pq}$ là một số nguyên.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{1.} Ta có $4 \equiv 1 \pmod 3$, do đó $4^a \equiv 1^a \equiv 1 \pmod 3$ với mọi $a \ge 1$.
+Mặt khác, $4^a$ luôn là số chẵn với mọi $a \ge 1$, nên:
+\[4^a \equiv 4 \pmod 6 \quad (\text{vì } 4^1 = 4,\; 4^2 = 16 \equiv 4 \pmod 6,\;\dots).\]
+Theo giả thiết:
+\[a - 1 \ \vdots \ 6 \implies a \equiv 1 \pmod 6.\]
+\[b + 2021 \ \vdots \ 6 \implies b \equiv -2021 \equiv -(-1) \equiv 1 \pmod 6 \quad (\text{do } 2021 = 6 \times 336 + 5 \equiv -1 \pmod 6).\]
+Suy ra:
+\[4^a + a + b \equiv 4 + 1 + 1 = 6 \equiv 0 \pmod 6.\]
+Vậy $4^a + a + b$ chia hết cho 6 (đpcm).
+
+\textbf{2.}
+\begin{itemize}
+\item Theo định lý Fermat nhỏ, với mọi số nguyên tố $p$:
+\[5^p \equiv 5 \pmod p \quad \text{và} \quad 2^p \equiv 2 \pmod p \implies 5^p - 2^p \equiv 5 - 2 = 3 \pmod p.\]
+Do đó $p \mid (5^p - 2^p) \iff p \mid 3 \implies \boxed{p = 3}$.
+Thử lại: Với $p = 3$, $5^3 - 2^3 = 125 - 8 = 117 = 3 \times 39 \ \vdots \ 3$ (thỏa mãn).
+\item Xét biểu thức $\dfrac{(5^p-2^p)(5^q-2^q)}{pq} \in \mathbb{Z}$:
+Vì $p, q$ là các số nguyên tố, để biểu thức là số nguyên thì $pq \mid (5^p-2^p)(5^q-2^q)$.
+Nếu $p = q = 3$: $\dfrac{117 \times 117}{9} = 13 \times 117 = 1521 \in \mathbb{Z}$ (thỏa mãn).
+Xét $p \neq q$: Giả sử $p < q$. Ta có $q \mid (5^p-2^p)(5^q-2^q)$.
+Vì $5^q - 2^q \equiv 3 \pmod q$, nếu $q \mid (5^q - 2^q)$ thì $q = 3$.
+Do đó, cặp số nguyên tố thỏa mãn là: $\boxed{(p; q) \in \{(3; 3)\}}$.
+\end{itemize}
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{2,0 điểm}
+Bên trong một hình chữ nhật có chiều dài $101\text{ cm}$ và chiều rộng $20\text{ cm}$, cho trước $10101$ điểm phân biệt. Vẽ $10101$ hình tròn có tâm lần lượt là $10101$ điểm đã cho và bán kính đều bằng $\sqrt{2}\text{ cm}$. Hỏi có hay không 6 điểm thuộc vào phần chung của 6 hình tròn nhận chính 6 điểm ấy làm tâm? Tại sao?
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Ta giải bài toán bằng nguyên lý Dirichlet (nguyên lý ngăn kéo).
+
+Chia hình chữ nhật ban đầu kích thước $101 \times 20$ thành các hình vuông nhỏ cạnh $1\text{ cm}$.
+Số lượng hình vuông nhỏ là:
+\[N = 101 \times 20 = 2020\text{ hình vuông nhỏ}.\]
+Theo nguyên lý Dirichlet, khi phân phối $10101$ điểm vào $2020$ hình vuông nhỏ:
+\[\left\lfloor \frac{10101 - 1}{2020} \right\rfloor + 1 = 5 + 1 = 6.\]
+Do đó, tồn tại ít nhất một hình vuông nhỏ chứa ít nhất $6$ điểm trong số các điểm đã cho.
+
+Gọi $6$ điểm đó là $A_1, A_2, A_3, A_4, A_5, A_6$.
+Trong một hình vuông cạnh bằng $1\text{ cm}$, khoảng cách lớn nhất giữa hai điểm bất kỳ không vượt quá độ dài đường chéo của hình vuông đó, tức là:
+\[d \le \sqrt{1^2 + 1^2} = \sqrt{2}\text{ cm}.\]
+Vì vậy, với mọi $i, j \in \{1, 2, \dots, 6\}$, ta đều có:
+\[A_i A_j \le \sqrt{2}\text{ cm}.\]
+Điều này có nghĩa là mỗi điểm trong 6 điểm này đều có khoảng cách đến 5 điểm còn lại không vượt quá $\sqrt{2}\text{ cm}$ (chính là bán kính của các hình tròn).
+Do đó, cả 6 điểm này đều thuộc về hình tròn tâm của nhau, tức là chúng cùng thuộc vào phần chung của 6 hình tròn nhận chính 6 điểm ấy làm tâm.
+
+\textbf{Kết luận:} \textbf{Có} tồn tại 6 điểm thỏa mãn yêu cầu đề bài.
+\end{loi_giai_cau}

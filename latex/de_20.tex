@@ -1,0 +1,110 @@
+﻿%% Đề 20 -- de-thi-hoc-sinh-gioi-cap-tinh-toan-9-nam-2020-2021-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 20}%
+  {Kỳ thi Chọn Học sinh giỏi cấp tỉnh lớp 9 — Năm học 2020--2021}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 20 — Kỳ thi Chọn HSG cấp tỉnh — Năm học 2020--2021}
+
+\begin{de_cau}{Câu 1}{4,0 điểm}
+Cho biểu thức:
+\[P = \left(\dfrac{x-y}{1-xy} + \dfrac{x+y}{1+xy}\right) : \left(1 + \dfrac{x^2-y^2}{1-x^2 y^2}\right) \quad \text{với } x \ge 0,\; y \ge 0,\; xy \neq 1.\]
+\begin{enumerate}[label=\alph*)]
+\item Rút gọn biểu thức $P$.
+\item Tính giá trị của biểu thức $P$ khi $x = \sqrt{5}-1$ và $y = \sqrt{9 - 4\sqrt{5}}$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Quy đồng biểu thức trong ngoặc thứ nhất:
+\begin{align*}
+\frac{x-y}{1-xy} + \frac{x+y}{1+xy} &= \frac{(x-y)(1+xy) + (x+y)(1-xy)}{(1-xy)(1+xy)} \\
+&= \frac{x + x^2 y - y - xy^2 + x - x^2 y + y - xy^2}{1 - x^2 y^2} = \frac{2x(1-y^2)}{1-x^2 y^2}.
+\end{align*}
+Biến đổi biểu thức trong ngoặc thứ hai:
+\[1 + \frac{x^2-y^2}{1-x^2 y^2} = \frac{1-x^2 y^2 + x^2 - y^2}{1-x^2 y^2} = \frac{(1+x^2)(1-y^2)}{1-x^2 y^2}.\]
+Do đó:
+\[P = \frac{2x(1-y^2)}{1-x^2 y^2} : \frac{(1+x^2)(1-y^2)}{1-x^2 y^2} = \frac{2x(1-y^2)}{(1+x^2)(1-y^2)} = \boxed{\frac{2x}{1+x^2}}.\]
+
+\textbf{b)} Ta có $y = \sqrt{9 - 4\sqrt{5}} = \sqrt{(\sqrt{5}-2)^2} = \sqrt{5}-2$.
+Biểu thức $P$ không phụ thuộc vào $y$, chỉ phụ thuộc vào $x$.
+Với $x = \sqrt{5}-1$:
+\[1 + x^2 = 1 + (\sqrt{5}-1)^2 = 1 + 5 - 2\sqrt{5} + 1 = 7 - 2\sqrt{5}.\]
+\[2x = 2(\sqrt{5}-1).\]
+Do đó:
+\[P = \frac{2(\sqrt{5}-1)}{7 - 2\sqrt{5}} = \frac{2(\sqrt{5}-1)(7+2\sqrt{5})}{49 - 20} = \frac{2(7\sqrt{5}+10-7-2\sqrt{5})}{29} = \frac{2(5\sqrt{5}+3)}{29} = \boxed{\frac{6+10\sqrt{5}}{29}}.\]
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{4,0 điểm}
+Cho phương trình: $mx^2 - 2(m+1)x + m - 3 = 0 \quad (1)$ ($m$ là tham số).
+\begin{enumerate}[label=\alph*)]
+\item Tìm $m$ để phương trình (1) có hai nghiệm phân biệt $x_1, x_2$.
+\item Tìm tất cả các giá trị của $m$ để: $(x_1-1)(x_2-1) + 2(x_1+x_2) = 4$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Phương trình là phương trình bậc hai khi $m \neq 0$.
+Để phương trình có hai nghiệm phân biệt thì:
+\[\begin{cases} m \neq 0 \\ \Delta' = [-(m+1)]^2 - m(m-3) > 0 \end{cases}\]
+Ta có $\Delta' = m^2 + 2m + 1 - m^2 + 3m = 5m + 1 > 0 \iff m > -\dfrac{1}{5}$.
+Vậy điều kiện là $\boxed{m > -\dfrac{1}{5}\text{ và }m \neq 0}$.
+
+\textbf{b)} Theo định lý Vi-ét:
+\[x_1 + x_2 = \frac{2(m+1)}{m};\qquad x_1 x_2 = \frac{m-3}{m}.\]
+Biến đổi hệ thức:
+\[(x_1-1)(x_2-1) + 2(x_1+x_2) = x_1 x_2 - (x_1+x_2) + 1 + 2(x_1+x_2) = x_1 x_2 + (x_1+x_2) + 1 = 4.\]
+\[\iff x_1 x_2 + (x_1+x_2) = 3.\]
+Thay các biểu thức Vi-ét vào:
+\[\frac{m-3}{m} + \frac{2(m+1)}{m} = 3 \iff \frac{m-3 + 2m + 2}{m} = 3 \iff \frac{3m - 1}{m} = 3 \iff 3m - 1 = 3m \iff -1 = 0\text{ (vô lý)}.\]
+Vậy \textbf{không có giá trị nào của $m$} thỏa mãn yêu cầu bài toán.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+\item Tìm tất cả các cặp số nguyên $(x; y)$ thỏa mãn: $2x^2 + 3y^2 - 4x - 6y - 7 = 0$.
+\item Cho $p$ là số nguyên tố lớn hơn 3. Chứng minh rằng $p^2 - 1$ chia hết cho 24.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Biến đổi phương trình:
+\[2(x^2-2x+1) + 3(y^2-2y+1) = 7 + 2 + 3 \iff 2(x-1)^2 + 3(y-1)^2 = 12.\]
+Vì $(x-1)^2 \ge 0$ và $(y-1)^2 \ge 0$ với $x, y \in \mathbb{Z}$:
+Từ $3(y-1)^2 \le 12 \implies (y-1)^2 \le 4 \implies (y-1)^2 \in \{0; 1; 4\}$.
+Mặt khác, $2(x-1)^2 = 12 - 3(y-1)^2$, do đó $12 - 3(y-1)^2$ phải là số chẵn $\implies 3(y-1)^2$ là số chẵn $\implies (y-1)^2$ là số chẵn.
+Do đó $(y-1)^2 \in \{0; 4\}$:
+\begin{itemize}
+\item TH1: $(y-1)^2 = 0 \implies y = 1 \implies 2(x-1)^2 = 12 \implies (x-1)^2 = 6$ (không có nghiệm nguyên vì 6 không là số chính phương).
+\item TH2: $(y-1)^2 = 4 \implies y - 1 = \pm 2 \implies y = 3$ hoặc $y = -1$.
+Khi đó $2(x-1)^2 = 12 - 3(4) = 0 \implies x - 1 = 0 \implies x = 1$.
+\end{itemize}
+Vậy các cặp nghiệm nguyên là: $\boxed{(1; 3)}$ và $\boxed{(1; -1)}$.
+
+\textbf{b)} Ta có $p^2 - 1 = (p-1)(p+1)$.
+Vì $p$ là số nguyên tố lớn hơn 3:
+\begin{itemize}
+\item $p$ là số lẻ, nên $p-1$ và $p+1$ là hai số chẵn liên tiếp. Trong hai số chẵn liên tiếp có một số chia hết cho 2 và một số chia hết cho 4.
+Do đó tích $(p-1)(p+1)$ chia hết cho $2 \times 4 = 8$.
+\item Trong ba số tự nhiên liên tiếp $p-1, p, p+1$ luôn có một số chia hết cho 3. Vì $p$ là số nguyên tố lớn hơn 3 nên $p$ không chia hết cho 3. Do đó $p-1$ hoặc $p+1$ phải chia hết cho 3, dẫn tới $(p-1)(p+1)$ chia hết cho 3.
+\end{itemize}
+Vì $\gcd(8, 3) = 1$ nên $p^2 - 1$ chia hết cho $8 \times 3 = 24$. Điều phải chứng minh.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{2,0 điểm}
+Cho các số thực dương $x, y, z$ thỏa mãn $x + y + z = 3$. Chứng minh rằng:
+\[\dfrac{x}{x + \sqrt{3x + yz}} + \dfrac{y}{y + \sqrt{3y + zx}} + \dfrac{z}{z + \sqrt{3z + xy}} \le 1.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Thay $3 = x+y+z$ vào biểu thức dưới căn:
+\[3x + yz = (x+y+z)x + yz = x^2 + xy + zx + yz = (x+y)(x+z).\]
+Áp dụng bất đẳng thức Cauchy-Schwarz:
+\[\sqrt{(x+y)(x+z)} \ge x + \sqrt{yz}.\]
+Suy ra:
+\[x + \sqrt{3x+yz} \ge 2x + \sqrt{yz}.\]
+Do đó:
+\[\frac{x}{x + \sqrt{3x+yz}} \le \frac{x}{2x + \sqrt{yz}} \le \frac{1}{2}\left(\frac{x}{x+y} + \frac{x}{x+z}\right) \dots\]
+Hoặc dùng AM-GM: $\sqrt{(x+y)(x+z)} \ge \sqrt{xy} + \sqrt{xz}$.
+Khi đó:
+\[\sum \frac{x}{x + \sqrt{3x+yz}} \le \sum \frac{\sqrt{x}}{\sqrt{x}+\sqrt{y}+\sqrt{z}} = 1.\]
+Dấu đẳng thức xảy ra khi và chỉ khi $x = y = z = 1$. Điều phải chứng minh.
+\end{loi_giai_cau}

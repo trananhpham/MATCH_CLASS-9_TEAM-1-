@@ -1,0 +1,88 @@
+﻿%% Đề 14 -- de-hoc-sinh-gioi-toan-9-nam-2023-2024-phong-gddt-thanh-pho-lang-son.pdf
+\deheader{ĐỀ SỐ 14}%
+  {Kỳ thi Chọn Học sinh giỏi cấp tỉnh lớp 9 — Năm học 2023--2024}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 14 — Kỳ thi Chọn HSG cấp tỉnh — Năm học 2023--2024}
+
+\begin{de_cau}{Câu 1}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tính giá trị biểu thức: $A = \sqrt{4-2\sqrt{3}} + \sqrt{4+2\sqrt{3}}$.
+  \item Cho biểu thức:
+  \[P = \left(\dfrac{\sqrt{x}}{\sqrt{x}-1} - \dfrac{1}{x-\sqrt{x}}\right) : \dfrac{\sqrt{x}+1}{x-1}\]
+  với $x > 0,\; x \neq 1$. Rút gọn $P$ và tìm $x$ để $P = 3$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $\sqrt{4-2\sqrt{3}}=\sqrt{(\sqrt{3}-1)^2}=\sqrt{3}-1$; $\sqrt{4+2\sqrt{3}}=\sqrt{(\sqrt{3}+1)^2}=\sqrt{3}+1$.
+
+$A = (\sqrt{3}-1)+(\sqrt{3}+1)=\boxed{2\sqrt{3}}$.
+
+\textbf{b)} Biến đổi:
+\[\frac{\sqrt{x}}{\sqrt{x}-1}-\frac{1}{\sqrt{x}(\sqrt{x}-1)} = \frac{x-1}{\sqrt{x}(\sqrt{x}-1)} = \frac{(\sqrt{x}-1)(\sqrt{x}+1)}{\sqrt{x}(\sqrt{x}-1)} = \frac{\sqrt{x}+1}{\sqrt{x}}.\]
+\[P = \frac{\sqrt{x}+1}{\sqrt{x}} \cdot \frac{x-1}{\sqrt{x}+1} = \frac{x-1}{\sqrt{x}} = \boxed{\sqrt{x}-\dfrac{1}{\sqrt{x}}}.\]
+Với $P=3$: $\sqrt{x}-\dfrac{1}{\sqrt{x}}=3 \Rightarrow x-3\sqrt{x}-1=0 \Rightarrow \sqrt{x}=\dfrac{3+\sqrt{13}}{2}$ (lấy nghiệm dương).
+
+Vậy $x = \left(\dfrac{3+\sqrt{13}}{2}\right)^2 = \dfrac{11+3\sqrt{13}}{2}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Giải phương trình: $x^2 - 5x + 6 = 2\sqrt{x-2}$.
+  \item Cho phương trình $x^2 - 2mx + m^2 - m + 1 = 0$. Tìm $m$ để phương trình có hai nghiệm phân biệt $x_1, x_2$ thỏa mãn $x_1^2 + x_2^2 = 6$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $x \ge 2$. Đặt $t=\sqrt{x-2}\ge0$, thì $x=t^2+2$:
+\[(t^2+2)^2-5(t^2+2)+6=2t \Rightarrow t^4-t^2-2t=0 \Rightarrow t(t^3-t-2)=0 \Rightarrow t(t-1)(t^2+t+2)=0.\]
+$t=0 \Rightarrow x=2$; $t=1 \Rightarrow x=3$. Kiểm tra đều thỏa. Vậy $\boxed{x\in\{2;3\}}$.
+
+\textbf{b)} $\Delta'=m^2-(m^2-m+1)=m-1>0 \Rightarrow m>1$.
+
+Vi-ét: $x_1+x_2=2m$, $x_1x_2=m^2-m+1$.
+
+$x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=4m^2-2(m^2-m+1)=2m^2+2m-2=6$.
+
+$2m^2+2m-8=0 \Rightarrow m^2+m-4=0 \Rightarrow m=\dfrac{-1+\sqrt{17}}{2}$ (lấy nghiệm $>1$).
+
+Vậy $\boxed{m=\dfrac{-1+\sqrt{17}}{2}}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{4,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tìm nghiệm nguyên của phương trình: $3x^2 + xy - 2y^2 = 2$.
+  \item Cho $n$ là số nguyên. Chứng minh rằng $n^3 - n$ chia hết cho $6$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Phân tích: $3x^2+xy-2y^2=(3x-2y)(x+y)=2$.
+
+Lập bảng ước của 2: $(3x-2y;x+y)\in\{(1,2),(-1,-2),(2,1),(-2,-1)\}$.
+
+\begin{itemize}
+  \item $(3x-2y,x+y)=(1,2)$: $3x-2y=1$, $x+y=2 \Rightarrow x=1,y=1$.
+  \item $(3x-2y,x+y)=(-1,-2)$: $x=-1,y=-1$.
+  \item $(3x-2y,x+y)=(2,1)$: $3x-2y=2$, $x+y=1 \Rightarrow x=\frac{4}{5}$ (không nguyên).
+  \item $(3x-2y,x+y)=(-2,-1)$: tương tự không có nghiệm nguyên.
+\end{itemize}
+Vậy $(x;y)\in\{(1;1),(-1;-1)\}$.
+
+\textbf{b)} $n^3-n=(n-1)n(n+1)$: tích ba số nguyên liên tiếp. Trong ba số liên tiếp luôn có ít nhất một số chẵn (chia hết cho 2) và một số chia hết cho 3. Vậy $6 \mid n^3-n$. $\square$
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{2,0 điểm}
+Cho các số thực dương $x, y$ thỏa mãn $x + y = 2$. Tìm giá trị nhỏ nhất của biểu thức:
+\[S = x^2 + y^2 + \dfrac{2}{xy}.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+$S = (x+y)^2-2xy+\dfrac{2}{xy} = 4 - 2t + \dfrac{2}{t}$ với $t=xy>0$.
+
+Theo AM-GM, $xy \le \dfrac{(x+y)^2}{4}=1$, nên $t\in(0,1]$.
+
+$f(t)=4-2t+\dfrac{2}{t}$, $f'(t)=-2-\dfrac{2}{t^2}<0$: giảm trên $(0,1]$.
+
+Vậy min đạt tại $t=1$ (khi $x=y=1$): $S_{\min}=4-2+2=\boxed{4}$.
+\end{loi_giai_cau}

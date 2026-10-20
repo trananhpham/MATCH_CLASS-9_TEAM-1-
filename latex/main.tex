@@ -1,0 +1,378 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX program = pdflatex
+%% ============================================================
+%%  TUYỂN TẬP 50 ĐỀ THI TOÁN LỚP 9 -- TỈNH LẠNG SƠN
+%%  Phiên bản: Học thuật & Chuyên nghiệp
+%%  Biên soạn: Ban biên tập Toán lớp 9 Lạng Sơn
+%% ============================================================
+\documentclass[12pt,a4paper]{article}
+
+%% ── ENCODING & FONT ──────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{lmodern}           % Font Latin Modern – sắc nét hơn Times
+\usepackage{microtype}         % Cải thiện khoảng cách chữ tự động
+
+%% Khai báo ký tự Unicode thường gặp
+\DeclareUnicodeCharacter{2713}{\checkmark}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{00B2}{\textsuperscript{2}}
+\DeclareUnicodeCharacter{00B3}{\textsuperscript{3}}
+\DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}}
+
+%% ── TOÁN HỌC ─────────────────────────────────────────────────
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{cases}
+
+%% ── TRANG / LAYOUT ───────────────────────────────────────────
+\usepackage[
+  a4paper,
+  top    = 2.5cm,
+  bottom = 2.5cm,
+  left   = 2.8cm,
+  right  = 2.2cm,
+  headheight = 16pt
+]{geometry}
+\usepackage{fancyhdr}
+\usepackage{emptypage}         % Trang trắng không có header/footer
+
+%% ── HYPERREF ─────────────────────────────────────────────────
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks  = true,
+  linkcolor   = NavyBlue,
+  urlcolor    = NavyBlue,
+  citecolor   = NavyBlue,
+  pdfencoding = auto,
+  pdftitle    = {Tuyển Tập 50 Đề Thi Toán Lớp 9 – Tỉnh Lạng Sơn},
+  pdfauthor   = {Ban Biên Soạn},
+  pdfsubject  = {Toán học – Đại số lớp 9},
+  pdfkeywords = {Toán lớp 9, Lạng Sơn, Đại số, Lời giải}
+}
+
+%% ── MÀU SẮC ─────────────────────────────────────────────────
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+
+%%  Bảng màu chủ đạo – học thuật, chuyên nghiệp
+\definecolor{PrimaryBlue}   {RGB}{10 , 60 , 120}   % Xanh đậm chủ đạo
+\definecolor{SecondaryBlue} {RGB}{30 , 100, 180}   % Xanh vừa – accent
+\definecolor{LightBlueShade}{RGB}{232, 242, 255}   % Nền câu hỏi
+\definecolor{MidnightRule}  {RGB}{10 , 60 , 120}   % Đường kẻ header
+\definecolor{AccentGreen}   {RGB}{0  , 110, 70 }   % Xanh lá lời giải
+\definecolor{LightGreenShade}{RGB}{225, 248, 236}  % Nền lời giải
+\definecolor{GoldAccent}    {RGB}{180, 130, 10 }   % Viền vàng titlepage
+\definecolor{WarmYellow}    {RGB}{255, 251, 230}   % Nền titlepage box
+\definecolor{SlateGray}     {RGB}{90 , 100, 115}   % Màu số trang, footer
+
+%% ── TCOLORBOX ────────────────────────────────────────────────
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable,theorems}
+
+%%  ┌─────────────────────────────────────────────────────────┐
+%%  │  BOX CÂU HỎI ĐỀ THI (nền xanh nhạt, viền xanh đậm)    │
+%%  └─────────────────────────────────────────────────────────┘
+\newtcolorbox{de_cau}[2]{
+  enhanced,
+  breakable,
+  colback      = LightBlueShade,
+  colframe     = PrimaryBlue,
+  arc          = 3pt,
+  boxrule      = 1pt,
+  leftrule     = 4pt,           % Sọc nhấn mạnh bên trái
+  title        = {\normalsize\bfseries #1 \enspace
+                  \normalfont\normalsize\color{SecondaryBlue}\textit{(#2)}},
+  fonttitle    = \color{white}\bfseries\large,
+  colbacktitle = PrimaryBlue,
+  attach boxed title to top left = {yshift=-2mm, xshift=6mm},
+  boxed title style = {
+    colback   = PrimaryBlue,
+    colframe  = PrimaryBlue,
+    arc       = 2pt,
+    boxrule   = 0pt,
+    left=6pt, right=6pt, top=3pt, bottom=3pt
+  },
+  top    = 10pt,
+  bottom = 8pt,
+  left   = 8pt,
+  right  = 8pt,
+  before upper = {\setlength{\parskip}{5pt}\setlength{\parindent}{0pt}}
+}
+
+%%  ┌─────────────────────────────────────────────────────────┐
+%%  │  BOX LỜI GIẢI (nền xanh lá nhạt, viền xanh lá đậm)    │
+%%  └─────────────────────────────────────────────────────────┘
+\newtcolorbox{loi_giai_cau}{
+  enhanced,
+  breakable,
+  colback      = LightGreenShade,
+  colframe     = AccentGreen,
+  arc          = 3pt,
+  boxrule      = 0.8pt,
+  leftrule     = 4pt,
+  title        = {\bfseries\normalsize
+                  \raisebox{-1pt}{\rule{0pt}{11pt}}%
+                  \(\triangleright\)\enspace Lời giải \& Đáp án},
+  fonttitle    = \color{white}\bfseries\normalsize,
+  colbacktitle = AccentGreen,
+  attach boxed title to top left = {yshift=-2mm, xshift=6mm},
+  boxed title style = {
+    colback   = AccentGreen,
+    colframe  = AccentGreen,
+    arc       = 2pt,
+    boxrule   = 0pt,
+    left=6pt, right=6pt, top=3pt, bottom=3pt
+  },
+  top    = 10pt,
+  bottom = 8pt,
+  left   = 8pt,
+  right  = 8pt,
+  before upper = {\setlength{\parskip}{5pt}\setlength{\parindent}{0pt}}
+}
+
+%% ── DANH SÁCH / BẢNG ─────────────────────────────────────────
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multicol}
+\setlist{nosep, leftmargin=*, topsep=3pt}
+\setlist[enumerate,1]{label=\bfseries\alph*)}
+\setlist[itemize,1]{label=\textcolor{SecondaryBlue}{\(\bullet\)}}
+
+%% ── TIÊU ĐỀ SECTION ─────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}
+  {\color{PrimaryBlue}\large\bfseries}
+  {\thesection.}{0.5em}{}
+  [\color{PrimaryBlue}\titlerule]
+\titleformat{\subsection}
+  {\color{SecondaryBlue}\normalsize\bfseries}
+  {\thesubsection.}{0.5em}{}
+
+%% ── HEADER / FOOTER ──────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{%
+  {\color{MidnightRule}\rule{\headwidth}{0.6pt}}%
+}
+\fancyhead[L]{%
+  \small\color{PrimaryBlue}\textit{Tuyển tập Đề thi Toán lớp 9 – Tỉnh Lạng Sơn}%
+}
+\fancyhead[R]{%
+  \small\color{PrimaryBlue}\textit{Đại số – Lời giải chi tiết}%
+}
+\fancyfoot[C]{%
+  \small\color{SlateGray}
+  \rule{2cm}{0.3pt}\enspace\thepage\enspace\rule{2cm}{0.3pt}%
+}
+\renewcommand{\footrulewidth}{0pt}
+
+%% Header trang đầu mỗi section (plain style)
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\small\color{SlateGray}
+    \rule{2cm}{0.3pt}\enspace\thepage\enspace\rule{2cm}{0.3pt}}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+%% ── LỆNH TIỆN ÍCH ───────────────────────────────────────────
+%% Nhãn đề thi (banner header mỗi đề)
+\newcommand{\deheader}[3]{%
+  % #1 = Số đề  #2 = Tên kỳ thi  #3 = Ghi chú
+  \vspace{6pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback  = PrimaryBlue,
+    colframe = PrimaryBlue!70!black,
+    arc      = 4pt,
+    boxrule  = 1.5pt,
+    halign   = center,
+    top=8pt, bottom=8pt, left=10pt, right=10pt
+  ]
+    {\color{white}\large\bfseries #1}\\[3pt]
+    {\color{white!90!gray}\normalsize\bfseries #2}\\[2pt]
+    {\color{white!75!gray}\small\itshape #3}
+  \end{tcolorbox}%
+  \vspace{2pt}%
+}
+
+% Lệnh đóng khung kết quả cuối bài
+\newcommand{\ketqua}[1]{\(\displaystyle\boxed{#1}\)}
+
+%% ── KHOẢNG CÁCH DÒNG ─────────────────────────────────────────
+\usepackage{setspace}
+\setstretch{1.15}
+
+%% ── CAPTIONS ─────────────────────────────────────────────────
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf, labelsep=period}
+
+%% ============================================================
+%%  BẮT ĐẦU TÀI LIỆU
+%% ============================================================
+\begin{document}
+
+%% ── TRANG BÌA ────────────────────────────────────────────────
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{1.5cm}
+
+  %% Dải màu trên cùng
+  \begin{tcolorbox}[
+    enhanced,
+    colback  = PrimaryBlue,
+    colframe = PrimaryBlue!60!black,
+    arc      = 6pt,
+    boxrule  = 2pt,
+    halign   = center,
+    width    = \textwidth,
+    top=28pt, bottom=22pt
+  ]
+    {\color{white}\fontsize{11}{14}\selectfont\bfseries\MakeUppercase{Tuyển Tập}}\\[6pt]
+    {\color{white}\fontsize{26}{32}\selectfont\bfseries\MakeUppercase{50 Đề Thi Toán Lớp 9}}\\[8pt]
+    {\color{white!85!gray}\fontsize{15}{20}\selectfont\bfseries Tỉnh Lạng Sơn}\\[6pt]
+    {\color{white!70!gray}\large Năm học 2012 – 2026}
+  \end{tcolorbox}
+
+  \vspace{0.7cm}
+
+  %% Dòng phụ đề
+  \begin{tcolorbox}[
+    enhanced,
+    colback  = WarmYellow,
+    colframe = GoldAccent,
+    arc      = 4pt,
+    boxrule  = 1pt,
+    halign   = center,
+    width    = 0.85\textwidth,
+    top=10pt, bottom=10pt
+  ]
+    {\color{PrimaryBlue}\large\bfseries
+      Phần Đại số — Đầy đủ Lời giải chi tiết}
+  \end{tcolorbox}
+
+  \vspace{0.9cm}
+
+  %% Hộp thông tin chính
+  \begin{tcolorbox}[
+    enhanced,
+    colback  = LightBlueShade,
+    colframe = SecondaryBlue,
+    arc      = 4pt,
+    boxrule  = 0.8pt,
+    width    = 0.92\textwidth,
+    left=12pt, right=12pt, top=10pt, bottom=10pt
+  ]
+    \begin{itemize}[leftmargin=1.8em, itemsep=4pt]
+      \item \textbf{Đầy đủ 50 đề thi} từ năm 2012 đến 2026 của tỉnh Lạng Sơn.
+      \item Phần \textbf{Hình học} đã được loại bỏ hoàn toàn theo yêu cầu.
+      \item \textbf{100\% câu hỏi} đều có phần \textbf{Lời giải \& Đáp án chi tiết}.
+      \item Trình bày chuẩn \textbf{học thuật} – tương thích Overleaf \& pdfLaTeX.
+    \end{itemize}
+  \end{tcolorbox}
+
+  \vfill
+
+  \begin{tcolorbox}[
+    enhanced,
+    colback  = white,
+    colframe = SlateGray!40,
+    arc      = 3pt,
+    boxrule  = 0.5pt,
+    halign   = center,
+    width    = 0.7\textwidth,
+    top=6pt, bottom=6pt
+  ]
+    {\small\color{SlateGray}
+      Ban Biên Soạn – Toán lớp 9 Lạng Sơn\\[2pt]
+      \textit{\today}}
+  \end{tcolorbox}
+  \vspace{1cm}
+\end{titlepage}
+
+%% ── MỤC LỤC ─────────────────────────────────────────────────
+\tableofcontents
+\clearpage
+
+%% ── BÁO CÁO TỔNG THỂ ────────────────────────────────────────
+\input{bao_cao_tong_the}
+\clearpage
+
+%% ============================================================
+%%  CÁC ĐỀ THI
+%%  Để bật thêm đề từ 6–50, xóa dấu % ở dòng tương ứng
+%% ============================================================
+
+%% ── Đề 1 ──
+\input{de_1}
+\clearpage
+
+%% ── Đề 2 ──
+\input{de_2}
+\clearpage
+
+%% ── Đề 3 ──
+\input{de_3}
+\clearpage
+
+%% ── Đề 4 ──
+\input{de_4}
+\clearpage
+
+%% ── Đề 5 ──
+\input{de_5}
+\clearpage
+
+%% ────────────────────────────────────────────────────────────
+%% Đề 6 – 50 (Bật khi cần; comment để biên dịch nhanh)
+%% ────────────────────────────────────────────────────────────
+% \input{de_6}
+% \input{de_7}
+% \input{de_8}
+% \input{de_9}
+% \input{de_10}
+% \input{de_11}
+% \input{de_12}
+% \input{de_13}
+% \input{de_14}
+% \input{de_15}
+% \input{de_16}
+% \input{de_17}
+% \input{de_18}
+% \input{de_19}
+% \input{de_20}
+% \input{de_21}
+% \input{de_22}
+% \input{de_23}
+% \input{de_24}
+% \input{de_25}
+% \input{de_26}
+% \input{de_27}
+% \input{de_28}
+% \input{de_29}
+% \input{de_30}
+% \input{de_31}
+% \input{de_32}
+% \input{de_33}
+% \input{de_34}
+% \input{de_35}
+% \input{de_36}
+% \input{de_37}
+% \input{de_38}
+% \input{de_39}
+% \input{de_40}
+% \input{de_41}
+% \input{de_42}
+% \input{de_43}
+% \input{de_44}
+% \input{de_45}
+% \input{de_46}
+% \input{de_47}
+% \input{de_48}
+% \input{de_49}
+% \input{de_50}
+
+\end{document}

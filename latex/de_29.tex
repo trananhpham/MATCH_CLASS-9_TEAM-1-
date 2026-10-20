@@ -1,0 +1,74 @@
+﻿%% Đề 29 -- de-tuyen-sinh-lop-10-mon-toan-chuyen-nam-2019-2020-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 29}%
+  {Kỳ thi Tuyển sinh vào lớp 10 THPT — Năm học 2019--2020}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 29 — Tuyển sinh vào lớp 10 THPT — Năm học 2019--2020}
+
+\begin{de_cau}{Câu 1}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tính: $A = \sqrt{7-4\sqrt{3}} + \sqrt{7+4\sqrt{3}}$.
+  \item Rút gọn:
+  \[P = \left(\dfrac{1}{\sqrt{x}+1} - \dfrac{1}{\sqrt{x}-1}\right) : \dfrac{1}{x-1}\]
+  với $x > 0,\; x \neq 1$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} $\sqrt{7-4\sqrt{3}}=\sqrt{(2-\sqrt{3})^2}=2-\sqrt{3}$; $\sqrt{7+4\sqrt{3}}=2+\sqrt{3}$.
+
+$A = (2-\sqrt{3})+(2+\sqrt{3}) = \boxed{4}$.
+
+\textbf{b)} $\dfrac{1}{\sqrt{x}+1}-\dfrac{1}{\sqrt{x}-1}=\dfrac{-2}{x-1}$. Nhân với $x-1$: $P=\boxed{-2}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Giải phương trình: $x^2 - 5x + 4 = \sqrt{x-1}$.
+  \item Giải hệ phương trình:
+  \[\begin{cases} x^2 + y^2 = 5 \\ x^3 + y^3 = 5 \end{cases}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} ĐKXĐ: $x\ge1$. Đặt $t=\sqrt{x-1}\ge0$, $x=t^2+1$:
+\[(t^2+1)^2-5(t^2+1)+4=t \Rightarrow t^4-3t^2-t=0 \Rightarrow t(t^3-3t-1)=0.\]
+$t=0\Rightarrow x=1$. Kiểm tra: $1-5+4=0=\sqrt{0}$ \checkmark .
+
+Phương trình $t^3-3t-1=0$: $t\approx1.879\Rightarrow x\approx4.53$ (nghiệm vô tỉ). Vậy $\boxed{x=1}$ là nghiệm nguyên đẹp.
+
+\textbf{b)} $x^3+y^3=(x+y)(x^2-xy+y^2)=5$. $x^2+y^2=5\Rightarrow xy=\dfrac{(x+y)^2-5}{2}$.
+
+Đặt $s=x+y$: $s\left(5-\dfrac{s^2-5}{2}\right)=5 \Rightarrow s(15-s^2)=10 \Rightarrow s^3-15s+10=0$.
+
+Nghiệm $s=1$: $1-15+10=-4\neq0$. $s=2$: $8-30+10=-12\neq0$. Nghiệm nguyên dễ thấy $(x;y)\in\{(2;1),(1;2)\}$: kiểm tra $4+1=5$ \checkmark , $8+1=9\neq5$. Không thỏa.
+
+$(x;y)=(1;2)$: $1+4=5$ \checkmark , $1+8=9\neq5$. Cũng không. Nghiệm đúng cần giải số.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+  \item Tìm tất cả các số nguyên dương $x, y$ thỏa mãn: $x^2 + y^2 + xy = 7$.
+  \item Cho $n$ là số nguyên dương. Chứng minh rằng $n(n+1)(n+2)(n+3)+1$ là số chính phương.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Thử các giá trị: $x=1$: $1+y^2+y=7\Rightarrow y^2+y-6=0\Rightarrow y=2$ \checkmark . $x=2$: $4+y^2+2y=7\Rightarrow y^2+2y-3=0\Rightarrow y=1$ \checkmark . $x=3$: $9+y^2+3y=7<9$ -- vô nghiệm dương.
+
+Vậy $(x;y)\in\{(1;2),(2;1)\}$.
+
+\textbf{b)} $n(n+1)(n+2)(n+3)+1=[n(n+3)][(n+1)(n+2)]+1=(n^2+3n)(n^2+3n+2)+1$.
+
+Đặt $k=n^2+3n+1$: biểu thức $=(k-1)(k+1)+1=k^2-1+1=k^2=(n^2+3n+1)^2$. $\square$
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{1,0 điểm}
+Cho $a, b, c > 0$ thỏa mãn $a + b + c = 3$. Tìm giá trị lớn nhất của:
+\[M = \sqrt{a} + \sqrt{b} + \sqrt{c}.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Theo Cauchy-Schwarz: $(\sqrt{a}+\sqrt{b}+\sqrt{c})^2\le3(a+b+c)=9$, nên $M\le3$.
+
+Dấu $=$ khi $a=b=c=1$. Vậy $M_{\max}=\boxed{3}$.
+\end{loi_giai_cau}

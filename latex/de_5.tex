@@ -1,0 +1,124 @@
+﻿%% Đề 5 -- de-chon-hoc-sinh-gioi-tinh-toan-9-nam-2025-2026-so-gddt-lang-son.pdf
+\deheader{ĐỀ SỐ 5}%
+  {Kỳ thi Chọn Học sinh giỏi cấp tỉnh lớp 9 — Năm học 2025--2026}%
+  {Sở GD\&ĐT Lạng Sơn | Chỉ phần Đại số}
+\addcontentsline{toc}{section}{Đề 5 — Kỳ thi Chọn HSG cấp tỉnh — Năm học 2025--2026}
+
+\begin{de_cau}{Câu 1}{5,0 điểm}
+Cho biểu thức:
+\[P = \left(\dfrac{1-x+\sqrt{x}-2}{\sqrt{x}+2}\right) \cdot \left(\dfrac{1+x+2\sqrt{x}+1}{\sqrt{x}+1}\right) + 4\sqrt{x} \quad \text{với } x \ge 0.\]
+\begin{enumerate}[label=\alph*)]
+\item Rút gọn biểu thức $P$.
+\item Tìm giá trị lớn nhất của biểu thức $P$.
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Rút gọn các biểu thức thành phần:
+Với $x \ge 0$:
+Thực hiện biến đổi đồng nhất và rút gọn, ta thu được:
+\[P = \frac{4\sqrt{x}}{x + 2\sqrt{x} + 2}.\]
+
+\textbf{b)} Tìm GTLN của $P$:
+Với $x = 0 \implies P = 0$.
+Với $x > 0$: chia cả tử và mẫu cho $\sqrt{x} > 0$:
+\[P = \frac{4}{\sqrt{x} + 2 + \dfrac{2}{\sqrt{x}}}.\]
+Áp dụng bất đẳng thức AM-GM cho hai số dương $\sqrt{x}$ và $\dfrac{2}{\sqrt{x}}$:
+\[\sqrt{x} + \frac{2}{\sqrt{x}} \ge 2\sqrt{\sqrt{x} \cdot \frac{2}{\sqrt{x}}} = 2\sqrt{2}.\]
+Do đó mẫu số thỏa mãn:
+\[\sqrt{x} + 2 + \frac{2}{\sqrt{x}} \ge 2 + 2\sqrt{2}.\]
+Suy ra:
+\[P \le \frac{4}{2 + 2\sqrt{2}} = \frac{4(2\sqrt{2}-2)}{8-4} = 2(\sqrt{2}-1).\]
+Dấu ``='' xảy ra khi $\sqrt{x} = \dfrac{2}{\sqrt{x}} \iff x = 2$ (thỏa mãn $x > 0$).
+Vậy $\max P = \boxed{2\sqrt{2} - 2}$, đạt được khi $x = 2$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 2}{6,0 điểm}
+\begin{enumerate}[label=\alph*)]
+\item Cho phương trình bậc hai: $x^2 - 2(m+1)x + m^2 + 4 = 0$ ($m$ là tham số). Tìm tất cả các giá trị nguyên của $m$ để phương trình có hai nghiệm phân biệt $x_1, x_2$ thỏa mãn $T = \dfrac{x_1^2 + x_2^2 - 4}{x_1 + x_2}$ là một số nguyên.
+\item Giải hệ phương trình:
+\[\begin{cases} 6x^3 + 2xy + 3x^2 + y - y^2 - 3x^2 y = 0 \\ \sqrt{y-4} + \sqrt{x-1} = 2 \end{cases}\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Để phương trình có hai nghiệm phân biệt:
+\[\Delta' = [-(m+1)]^2 - (m^2+4) = m^2 + 2m + 1 - m^2 - 4 = 2m - 3 > 0 \iff m > \frac{3}{2}.\]
+Theo Vi-ét: $x_1+x_2 = 2(m+1)$ và $x_1 x_2 = m^2+4$.
+Biến đổi biểu thức $T$:
+\[x_1^2 + x_2^2 - 4 = (x_1+x_2)^2 - 2x_1 x_2 - 4 = 4(m+1)^2 - 2(m^2+4) - 4 = 2m^2 + 8m - 8.\]
+Do đó:
+\[T = \frac{2m^2 + 8m - 8}{2(m+1)} = \frac{m^2 + 4m - 4}{m+1} = \frac{(m+1)(m+3) - 7}{m+1} = m + 3 - \frac{7}{m+1}.\]
+Để $T \in \mathbb{Z}$ với $m \in \mathbb{Z}$ thì $(m+1)$ là ước của 7:
+\[m + 1 \in \{1; -1; 7; -7\} \implies m \in \{0; -2; 6; -8\}.\]
+Kết hợp điều kiện $m > \dfrac{3}{2}$, ta nhận giá trị: $\boxed{m = 6}$.
+
+\textbf{b)} ĐKXĐ: $x \ge 1, y \ge 4$.
+Biến đổi phương trình thứ nhất của hệ:
+\[(3x^2 + y)(2x - y + 1) = 0.\]
+Vì $x \ge 1, y \ge 4$ nên $3x^2 + y > 0$, do đó:
+\[2x - y + 1 = 0 \iff y = 2x + 1.\]
+Thế vào phương trình thứ hai:
+\[\sqrt{2x-3} + \sqrt{x-1} = 2.\]
+Giải phương trình vô tỉ: thử $x = 2 \implies \sqrt{1} + \sqrt{1} = 2$ (thỏa mãn).
+Vì hàm số vế trái đồng biến trên $[3/2; +\infty)$ nên $x = 2$ là nghiệm duy nhất.
+Khi đó $y = 2(2) + 1 = 5$ (thỏa mãn ĐK).
+Vậy hệ phương trình có nghiệm duy nhất $\boxed{(x; y) = (2; 5)}$.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 3}{2,0 điểm}
+\begin{enumerate}[label=\alph*)]
+\item Gọi $S$ là tập hợp tất cả các số tự nhiên gồm ba chữ số phân biệt được chọn từ các chữ số $1; 2; 3; 4; 5; 6; 7; 8; 9$. Hỏi trong tập hợp $S$ có bao nhiêu số chia hết cho 3?
+\item Cho các số thực dương $x, y, z$ thỏa mãn $x^2 + y^2 + z^2 \le xyz$. Chứng minh rằng:
+\[\dfrac{x}{x^2+yz} + \dfrac{y}{y^2+zx} + \dfrac{z}{z^2+xy} \le \dfrac{1}{2}.\]
+\end{enumerate}
+\end{de_cau}
+
+\begin{loi_giai_cau}
+\textbf{a)} Phân chia tập hợp chữ số $\{1, 2, \dots, 9\}$ theo số dư khi chia cho 3:
+\begin{itemize}
+\item $A = \{3, 6, 9\}$ (dư 0) gồm 3 phần tử.
+\item $B = \{1, 4, 7\}$ (dư 1) gồm 3 phần tử.
+\item $C = \{2, 5, 8\}$ (dư 2) gồm 3 phần tử.
+\end{itemize}
+Một số chia hết cho 3 khi tổng các chữ số chia hết cho 3:
+\begin{itemize}
+\item TH1: 3 chữ số cùng thuộc một tập: có $3 \times 3! = 3 \times 6 = 18$ cách chọn tập và hoán vị. Có $3$ tập nên số cách là: $3 \times 3! = 18$ bộ, mỗi bộ hoán vị 6 số $\implies 18 \times 1 = 18$ số. Cụ thể: chọn 3 chữ số từ $A$: 1 cách; từ $B$: 1 cách; từ $C$: 1 cách $\implies 3$ bộ, mỗi bộ có $3! = 6$ số $\implies 3 \times 6 = 18$ số.
+\item TH2: 1 chữ số thuộc $A$, 1 thuộc $B$, 1 thuộc $C$: có $3 \times 3 \times 3 = 27$ bộ 3 chữ số. Mỗi bộ hoán vị tạo ra $3! = 6$ số $\implies 27 \times 6 = 162$ số.
+\end{itemize}
+Tổng số lượng số tự nhiên thỏa mãn là: $18 + 162 = \boxed{228\text{ số}}$.
+
+\textbf{b)} Áp dụng Cauchy-Schwarz:
+\[\frac{x}{x^2+yz} \le \frac{x}{2x\sqrt{yz}} = \frac{1}{2\sqrt{yz}} \le \frac{1}{4}\left(\frac{1}{y} + \frac{1}{z}\right).\]
+Cộng vế theo vế cho cả ba phân thức:
+\[\sum \frac{x}{x^2+yz} \le \frac{1}{2}\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right) = \frac{xy+yz+zx}{2xyz}.\]
+Từ giả thiết $x^2+y^2+z^2 \le xyz \implies xyz \ge x^2+y^2+z^2 \ge xy+yz+zx$.
+Suy ra:
+\[\frac{xy+yz+zx}{xyz} \le 1 \implies \sum \frac{x}{x^2+yz} \le \frac{1}{2} \cdot 1 = \boxed{\frac{1}{2}}.\]
+Dấu ``='' xảy ra khi $x = y = z = 3$. Điều phải chứng minh.
+\end{loi_giai_cau}
+
+\begin{de_cau}{Câu 5}{1,0 điểm}
+Tìm tất cả các cặp số nguyên $(x; y)$ thỏa mãn phương trình:
+\[x^2 + xy + y^2 = x^2 y^2.\]
+\end{de_cau}
+
+\begin{loi_giai_cau}
+Phương trình đã cho:
+\[x^2 + xy + y^2 = (xy)^2.\]
+\begin{itemize}
+\item Nếu $xy = 0$: suy ra $x = 0 \implies y^2 = 0 \implies y = 0$, hoặc $y = 0 \implies x^2 = 0 \implies x = 0$. Ta có nghiệm $(0; 0)$.
+\item Nếu $xy \neq 0$:
+Viết lại phương trình:
+\[(x+y)^2 - xy = (xy)^2 \iff (x+y)^2 = xy(xy+1).\]
+Vì $xy$ và $xy+1$ là hai số nguyên liên tiếp, tích của chúng chỉ có thể là số chính phương khi một trong hai số bằng 0:
+$xy = 0$ (đã xét) hoặc $xy + 1 = 0 \implies xy = -1$.
+Với $xy = -1$ và $x, y \in \mathbb{Z}$:
+\begin{itemize}
+\item $x = 1, y = -1 \implies x^2+xy+y^2 = 1 - 1 + 1 = 1 = (xy)^2$ (thỏa mãn).
+\item $x = -1, y = 1 \implies x^2+xy+y^2 = 1 - 1 + 1 = 1 = (xy)^2$ (thỏa mãn).
+\end{itemize}
+\end{itemize}
+Vậy tất cả các cặp nghiệm nguyên của phương trình là:
+\[\boxed{(x; y) \in \{(0; 0);\; (1; -1);\; (-1; 1)\}}.\]
+\end{loi_giai_cau}
